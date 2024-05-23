@@ -17,14 +17,28 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico" />
+<link rel="android-chrome" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+<link rel="android-chrome" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel="preload" href="/fonts/Pretendard-Black.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/Pretendard-ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/Pretendard-Medium.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/NotoSansKR-ExtraBold.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/NotoSansKR-Bold.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/NotoSansKR-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/NotoSansKR-Medium.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/NotoSansKR-Regular.ttf" as="font" type="font/ttf" crossorigin />
+
+<link rel="preload" href="/fonts/Lato-Bold.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/Lato-BoldItalic.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/Lato-Regular.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/Lato-Italic.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/Lato-Light.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/Lato-LightItalic.ttf" as="font" type="font/ttf" crossorigin />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
