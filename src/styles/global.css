@@ -17,80 +17,95 @@
 }
 
 @font-face {
-  font-family: "Pretendard-Black";
-  src: url("/fonts/Pretendard-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard-ExtraBold";
-  src: url("/fonts/Pretendard-ExtraBold.woff2") format("woff2");
+  font-family: "NotoSansKR-ExtraBold";
+  src: url("/fonts/NotoSansKR-ExtraBold.ttf") format("ttf");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Pretendard-Bold";
-  src: url("/fonts/Pretendard-Bold.woff2") format("woff2");
+  font-family: "NotoSansKR-Bold";
+  src: url("/fonts/NotoSansKR-Bold.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Pretendard-SemiBold";
-  src: url("/fonts/Pretendard-SemiBold.woff2") format("woff2");
+  font-family: "NotoSansKR-SemiBold";
+  src: url("/fonts/NotoSansKR-SemiBold.ttf") format("ttf");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Pretendard-Medium";
-  src: url("/fonts/Pretendard-Medium.woff2") format("woff2");
+  font-family: "NotoSansKR-Medium";
+  src: url("/fonts/NotoSansKR-Medium.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Pretendard-Regular";
-  src: url("/fonts/Pretendard-Regular.woff2") format("woff2");
+  font-family: "NotoSansKR-Regular";
+  src: url("/fonts/NotoSansKR-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Pretendard-Light";
-  src: url("/fonts/Pretendard-Light.woff2") format("woff2");
+  font-family: "Lato-Bold";
+  src: url("/fonts/Lato-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-BoldItalic";
+  src: url("/fonts/Lato-BoldItalic.ttf") format("ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/fonts/Lato-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Italic";
+  src: url("/fonts/Lato-Italic.ttf") format("ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("/fonts/Lato-Light.ttf") format("ttf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Pretendard-ExtraLight";
-  src: url("/fonts/Pretendard-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard-Thin";
-  src: url("/fonts/Pretendard-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
+  font-family: "Lato-LightItalic";
+  src: url("/fonts/Lato-LightItalic.ttf") format("ttf");
+  font-weight: 300;
+  font-style: italic;
   font-display: swap;
 }
 
 body {
-  font-family: "Pretendard-Black", "Pretendard-ExtraBold", "Pretendard-Medium",
-    "Pretendard-Regular", sans-serif;
+  font-family: "NotoSansKR", "Lato", sans-serif;
   margin: 0;
   padding: 0;
   text-align: left;
