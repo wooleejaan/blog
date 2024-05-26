@@ -9,47 +9,51 @@ interface Props {
   title: string;
   shouldRenderLinks?: boolean;
   shouldRenderHeader?: boolean;
+  isHomePage?: boolean;
+  pageTitle?: string;
 }
-
-const LINKS: {
-  href: string;
-  name: string;
-  isExternal?: boolean;
-  mobliePath: string;
-}[] = [
-  {
-    href: "/about",
-    name: "About",
-    isExternal: false,
-    mobliePath: "/icon/about.svg",
-  },
-  {
-    href: "https://github.com/wooleejaan",
-    name: "GitHub",
-    isExternal: true,
-    mobliePath: "/icon/github.svg",
-  },
-  {
-    href: "https://www.linkedin.com/in/wooleejaan/",
-    name: "LinkedIn",
-    isExternal: true,
-    mobliePath: "/icon/linkedin.svg",
-  },
-];
 
 const PageLayoutWithHeader = ({
   title,
   shouldRenderLinks,
   shouldRenderHeader,
+  isHomePage = false,
+  pageTitle,
   children,
 }: PropsWithChildren<Props>) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const { isDesktop } = useWindowSize();
 
+  const LINKS: {
+    href: string;
+    name: string;
+    isExternal?: boolean;
+    mobliePath: string;
+  }[] = [
+    {
+      href: "https://github.com/wooleejaan",
+      name: "GitHub",
+      isExternal: true,
+      mobliePath: "/icon/github.svg",
+    },
+    {
+      href: "https://www.linkedin.com/in/wooleejaan/",
+      name: "LinkedIn",
+      isExternal: true,
+      mobliePath: "/icon/linkedin.svg",
+    },
+    {
+      href: isHomePage ? "/about" : "/",
+      name: isHomePage ? "About" : "Home",
+      isExternal: false,
+      mobliePath: "/icon/about.svg",
+    },
+  ];
+
   const handleScroll = () => {
     const mainNodeTop = containerRef.current?.getBoundingClientRect()?.top ?? 0;
-    const hasScrolled = mainNodeTop < -10;
+    const hasScrolled = mainNodeTop < -180; // $section-header-height(60px) * 3
     setIsScrolled(hasScrolled);
   };
 
@@ -65,7 +69,9 @@ const PageLayoutWithHeader = ({
       {shouldRenderHeader && (
         <header className={cx("headerWrapper", { isScrolled })}>
           <div className={cx("header")}>
-            <h1 className={cx("title")}>{title}</h1>
+            <h1 className={cx("title")}>
+              <a href="/">{isScrolled ? pageTitle : title}</a>
+            </h1>
             {shouldRenderLinks && (
               <nav className={cx("nav")}>
                 {LINKS.map(({ href, name, isExternal, mobliePath }) => (
@@ -78,11 +84,13 @@ const PageLayoutWithHeader = ({
                     {isDesktop ? (
                       <>
                         {name}
-                        <img
-                          className={cx("image")}
-                          src="/icon/external-link.svg"
-                          alt={name}
-                        />
+                        {isExternal && (
+                          <img
+                            className={cx("image")}
+                            src="/icon/external-link.svg"
+                            alt={name}
+                          />
+                        )}
                       </>
                     ) : (
                       <img

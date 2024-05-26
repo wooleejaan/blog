@@ -4,6 +4,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import PageLayoutWithHeader from "../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader";
 import PageSection from "../libs/shared/components/PageSection/PageSection";
 import SearchBar from "../libs/home/feature-home-search-bar/SearchBar.astro";
+
+const { pathname } = Astro.url;
+const subpath = pathname.match(/[^\/]+/g);
+const baseHref = "/";
+const isHome = baseHref === pathname || baseHref === "/" + subpath?.[0];
 ---
 
 <!doctype html>
@@ -17,8 +22,9 @@ import SearchBar from "../libs/home/feature-home-search-bar/SearchBar.astro";
       shouldRenderHeader
       shouldRenderLinks
       client:idle
+      isHomePage={isHome}
     >
-      <PageSection title="Hello, World.">
+      <PageSection title="Hello, World." disableTitleMarginBottom>
         <SearchBar />
       </PageSection>
     </PageLayoutWithHeader>

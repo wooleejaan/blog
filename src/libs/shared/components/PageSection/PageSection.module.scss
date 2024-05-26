@@ -4,12 +4,21 @@
   width: 100%;
   max-width: $section-max-content-width;
   margin: 0 auto;
-  padding: $section-content-padding-top $section-horizontal-padding 0;
+  padding: $section-content-padding-top $section-horizontal-padding
+    $section-content-padding-top;
   position: relative;
 
   .contents {
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    .title {
+      margin-bottom: 24px;
+
+      &.disableTitleMarginBottom {
+        margin-bottom: 0;
+      }
+    }
   }
 }

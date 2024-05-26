@@ -1,0 +1,53 @@
+@import "src/styles/utils";
+
+.container {
+  width: 100%;
+  position: relative;
+  word-break: keep-all;
+}
+
+.section {
+  width: 100%;
+
+  & + & {
+    margin-top: 32px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $color-gray01;
+  }
+
+  .items {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+
+      .itemTitle {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .descriptions {
+        color: $color-gray05;
+        font-size: 16px;
+        font-weight: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding-left: 18px;
+      }
+    }
+  }
+}
+
+.heroText {
+  color: $color-gray05;
+}
