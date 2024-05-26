@@ -1,0 +1,7 @@
+@import "./var";
+
+@mixin desktop {
+  @media (min-width: $device-desktop) {
+    @content;
+  }
+}

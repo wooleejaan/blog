@@ -1,0 +1,23 @@
+---
+const today = new Date();
+---
+
+<footer>
+  <p>&copy; {today.getFullYear()} yongwoo. All rights reserved.</p>
+</footer>
+
+<style lang="scss">
+  @import "src/styles/utils";
+
+  footer {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 100%;
+    height: $section-footer-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+</style>

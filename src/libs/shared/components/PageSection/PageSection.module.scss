@@ -1,0 +1,15 @@
+@import "src/styles/utils";
+
+.container {
+  width: 100%;
+  max-width: $section-max-content-width;
+  margin: 0 auto;
+  padding: $section-content-padding-top $section-horizontal-padding 0;
+  position: relative;
+
+  .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

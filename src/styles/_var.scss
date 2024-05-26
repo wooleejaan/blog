@@ -1,0 +1,16 @@
+// responsive
+$device-desktop: 992px;
+$section-horizontal-padding: 24px;
+$section-max-width: calc($device-desktop - $section-horizontal-padding);
+$section-max-content-width: calc($section-max-width - 200px);
+$section-header-height: 60px;
+$section-content-padding-top: calc($section-header-height * 2.5);
+$section-footer-height: 84px;
+
+$color-white: #fff;
+$color-black: #000;
+$color-gray01: #d4d4d4;
+$color-gray02: #b4b4b4;
+$color-gray03: #909090;
+$color-gray04: #636363;
+$color-gray05: #494848;

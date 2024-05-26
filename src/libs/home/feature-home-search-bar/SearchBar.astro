@@ -1,0 +1,103 @@
+---
+import Search from "astro-pagefind/components/Search";
+
+interface Props {}
+
+const {} = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<Search
+  id="search"
+  className="pagefind-ui"
+  uiOptions={{
+    highlightParam: "highlight",
+    translations: {
+      placeholder: "Search only in English",
+      zero_results: "Couldn't find [SEARCH_TERM]",
+    },
+  }}
+  data-year={{ currentYear }}
+/>
+<script is:inline define:vars={{ currentYear }}></script>
+<style is:global lang="scss">
+  @import "src/styles/utils";
+
+  :root {
+    --pagefind-ui-scale: 0.8;
+    --pagefind-ui-border-width: 1.2px;
+    --pagefind-ui-border-radius: 10px;
+    --pagefind-ui-image-border-radius: 10px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: "NotoSansKR", "Lato", sans-serif;
+  }
+
+  #search .pagefind-ui {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  #search .pagefind-ui__form {
+    &::before {
+      width: 16px;
+      height: 16px;
+      left: 0;
+    }
+  }
+
+  #search .pagefind-ui__search-clear {
+    color: $color-black;
+    background-color: $color-white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  #search .pagefind-ui__search-input {
+    position: relative;
+    border-radius: 0px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-black;
+    background: linear-gradient($color-black 0 0) bottom / 0% 1px no-repeat
+      $color-white;
+    padding-left: 30px;
+    padding-right: 54px;
+
+    &:focus,
+    &:hover {
+      transition: all 0.3s;
+      background-size: 100% 1px;
+    }
+  }
+
+  #search .pagefind-ui__result-title,
+  #search .pagefind-ui__result-link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: calc(40px * var(--pagefind-ui-scale));
+    color: $color-black;
+  }
+  #search .pagefind-ui__result-excerpt {
+    color: $color-black;
+    font-weight: 400;
+    font-size: calc(1.5rem * var(--pagefind-ui-scale));
+  }
+  #search .pagefind-ui__message {
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-black;
+    margin: calc(0.5rem * var(--pagefind-ui-scale)) 0
+      calc(1.5rem * var(--pagefind-ui-scale))
+      calc(0.5rem * var(--pagefind-ui-scale));
+  }
+  #search .pagefind-ui__button {
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-black;
+    background: $color-white;
+  }
+  #search .pagefind-ui__result-thumb {
+    display: none;
+  }
+</style>
