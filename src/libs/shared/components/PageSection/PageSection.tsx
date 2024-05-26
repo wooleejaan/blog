@@ -17,7 +17,7 @@ const PageSection = ({
   return (
     <div className={cx("container")}>
       <div className={cx("contents")}>
-        <h1 className={cx("title", { disableTitleMarginBottom })}>{title}</h1>
+        <h3 className={cx("title", { disableTitleMarginBottom })}>{title}</h3>
         {children}
       </div>
     </div>

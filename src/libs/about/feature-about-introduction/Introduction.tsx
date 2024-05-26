@@ -55,14 +55,14 @@ const Introduction = () => {
         </p>
       </div>
       <div className={cx("section")}>
-        <h1 className={cx("sectionTitle")}>Experience</h1>
+        <h3 className={cx("sectionTitle")}>Experience</h3>
         <div className={cx("items")}>
           {experiences().map(({ title, descriptions }) => (
             <div className={cx("item")} key={title}>
               <div className={cx("itemTitle")}>{title}</div>
               <div className={cx("descriptions")}>
                 {descriptions.map((description) => (
-                  <li>{description}</li>
+                  <li>- {description}</li>
                 ))}
               </div>
             </div>
@@ -70,14 +70,14 @@ const Introduction = () => {
         </div>
       </div>
       <div className={cx("section")}>
-        <h1 className={cx("sectionTitle")}>Education</h1>
+        <h3 className={cx("sectionTitle")}>Education</h3>
         <div className={cx("items")}>
           {educations().map(({ title, descriptions }) => (
             <div className={cx("item")} key={title}>
               <div className={cx("itemTitle")}>{title}</div>
               <div className={cx("descriptions")}>
                 {descriptions.map((description) => (
-                  <li>{description}</li>
+                  <li>- {description}</li>
                 ))}
               </div>
             </div>

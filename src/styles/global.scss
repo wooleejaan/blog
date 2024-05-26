@@ -44,55 +44,55 @@
 }
 
 @font-face {
-  font-family: "Lato-Bold";
-  src: url("/fonts/Lato-Bold.ttf") format("ttf");
+  font-family: "Geist-Black";
+  src: url("/fonts/Geist-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist-Bold";
+  src: url("/fonts/Geist-Bold.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Lato-BoldItalic";
-  src: url("/fonts/Lato-BoldItalic.ttf") format("ttf");
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Geist-SemiBold";
+  src: url("/fonts/Geist-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Lato-Regular";
-  src: url("/fonts/Lato-Regular.ttf") format("ttf");
+  font-family: "Geist-Medium";
+  src: url("/fonts/Geist-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist-Regular";
+  src: url("/fonts/Geist-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Lato-Italic";
-  src: url("/fonts/Lato-Italic.ttf") format("ttf");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-Light";
-  src: url("/fonts/Lato-Light.ttf") format("ttf");
+  font-family: "Geist-Light";
+  src: url("/fonts/Geist-Light.ttf") format("ttf");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-LightItalic";
-  src: url("/fonts/Lato-LightItalic.ttf") format("ttf");
-  font-weight: 300;
-  font-style: italic;
   font-display: swap;
 }
 
 html {
-  font-family: "NotoSansKR", "Lato", sans-serif;
+  font-family: "Geist", "NotoSansKR", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -196,4 +196,81 @@ a:active {
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #494848;
+}
+
+pre {
+  padding: 12px 24px 12px 0px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 180px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+blockquote {
+  background-color: #d4d4d44d;
+  padding: 12px 24px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 6px;
 }

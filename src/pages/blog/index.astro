@@ -15,7 +15,7 @@ const posts = (await getCollection("blog")).sort(
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={"Posts"} description={""} />
     <style lang="scss">
       @import "src/styles/utils";
 
@@ -31,7 +31,6 @@ const posts = (await getCollection("blog")).sort(
         display: flex;
         flex-direction: column;
         gap: 12px;
-        padding: 12px 24px;
         background-color: transparent;
         border-radius: 10px;
 

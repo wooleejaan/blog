@@ -44,16 +44,10 @@ const PageLayoutWithHeader = ({
       mobliePath: "/icon/linkedin.svg",
     },
     {
-      href: isHomePage ? "/about" : "/",
-      name: isHomePage ? "About" : "Home",
+      href: "/about",
+      name: "About",
       isExternal: false,
       mobliePath: "/icon/about.svg",
-    },
-    {
-      href: "/blog",
-      name: "Notes",
-      isExternal: false,
-      mobliePath: "/icon/posts.svg",
     },
   ];
 

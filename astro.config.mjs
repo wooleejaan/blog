@@ -12,17 +12,16 @@ export default defineConfig({
   build: {
     format: "file",
   },
-  integrations: [
-    sitemap(),
-    pagefind(),
-    react(),
-    mdx({ remarkPlugins: [remarkToc] }),
-  ],
+  integrations: [sitemap(), pagefind(), react(), mdx()],
   devToolbar: {
     enabled: false,
   },
   markdown: {
+    shikiConfig: {
+      theme: "vitesse-light",
+    },
+    gfm: false,
     extendDefaultPlugins: false,
-    remarkPlugins: [remarkReadingTime],
+    remarkPlugins: [remarkReadingTime, remarkToc],
   },
 });
