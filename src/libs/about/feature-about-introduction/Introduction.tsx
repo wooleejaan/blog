@@ -3,9 +3,7 @@ import styles from "./Introduction.module.scss";
 
 const cx = classNames.bind(styles);
 
-interface Props {}
-
-const Introduction = ({}: Props) => {
+const Introduction = () => {
   const experiences = (): { title: string; descriptions: string[] }[] => [
     {
       title: "Software Engineer, Web Front End",

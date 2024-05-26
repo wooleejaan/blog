@@ -49,6 +49,12 @@ const PageLayoutWithHeader = ({
       isExternal: false,
       mobliePath: "/icon/about.svg",
     },
+    {
+      href: "/blog",
+      name: "Notes",
+      isExternal: false,
+      mobliePath: "/icon/posts.svg",
+    },
   ];
 
   const handleScroll = () => {

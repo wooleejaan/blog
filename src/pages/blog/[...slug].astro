@@ -1,20 +1,77 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import { type CollectionEntry, getCollection } from "astro:content";
+import BaseHead from "../../libs/blog/BaseHead.astro";
+import PageLayoutWithHeader from "../../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader";
+import PageSection from "../../libs/shared/components/PageSection/PageSection";
+import FormattedDate from "../../libs/blog/FormattedDate.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
-type Props = CollectionEntry<'blog'>;
+type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
-const { Content } = await post.render();
+const { Content, remarkPluginFrontmatter } = await post.render();
+
+const { title, description, pubDate, updatedDate, heroImage } = post.data;
 ---
 
-<BlogPost {...post.data}>
-	<Content />
-</BlogPost>
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+    <style lang="scss">
+      @import "src/styles/utils";
+
+      .section {
+        border-top: 1px solid $color-gray01;
+        position: relative;
+        margin-bottom: 24px;
+      }
+
+      .date {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        right: 0;
+        top: -24px;
+        color: $color-gray03;
+      }
+    </style></head
+  >
+
+  <body>
+    <PageLayoutWithHeader
+      title="Scribbled Notes"
+      shouldRenderHeader
+      shouldRenderLinks
+      client:idle
+      pageTitle={title}
+    >
+      <PageSection title={title}>
+        <div class="section">
+          <div class="date">
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  (Last updated on <FormattedDate date={updatedDate} />)
+                </div>
+              )
+            }
+            ·
+            <span class="minutesRead"
+              >{remarkPluginFrontmatter?.minutesRead}</span
+            >
+          </div>
+        </div>
+        <Content />
+      </PageSection>
+    </PageLayoutWithHeader>
+  </body>
+</html>
