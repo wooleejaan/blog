@@ -94,13 +94,7 @@ const posts = (await getCollection("blog")).sort(
     </style>
   </head>
   <body>
-    <PageLayoutWithHeader
-      title="yongwoo"
-      shouldRenderHeader
-      shouldRenderLinks
-      client:idle
-      isHomePage={isHome}
-    >
+    <PageLayoutWithHeader title="yongwoo" client:idle isHomePage={isHome}>
       <PageSection disableTitleMarginBottom>
         <div class="hero">
           <span>
@@ -116,7 +110,10 @@ const posts = (await getCollection("blog")).sort(
             <a href="https://www.prix.im/" target="_blank" class="link">
               Prix{" "}
             </a>
-            full-time. Here, I write about things I learn and find interesting.
+            full-time. Here, I write about things I learn and find interesting. <a
+              class="link"
+              href="/about">(...more)</a
+            >
           </span>
         </div>
         <div class="list">

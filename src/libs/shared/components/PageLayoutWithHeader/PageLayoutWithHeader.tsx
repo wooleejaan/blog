@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState, type PropsWithChildren } from "react";
 import styles from "./PageLayoutWithHeader.module.scss";
 import classNames from "classnames/bind";
-import useWindowSize from "../../hooks/useWindowSize";
 
 const cx = classNames.bind(styles);
 
@@ -23,7 +22,6 @@ const PageLayoutWithHeader = ({
 }: PropsWithChildren<Props>) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { isDesktop } = useWindowSize();
 
   const LINKS: {
     href: string;
@@ -42,12 +40,6 @@ const PageLayoutWithHeader = ({
       name: "linkedin",
       isExternal: true,
       mobliePath: "/icon/linkedin.svg",
-    },
-    {
-      href: "/about",
-      name: "about",
-      isExternal: false,
-      mobliePath: "/icon/about.svg",
     },
   ];
 
@@ -81,21 +73,11 @@ const PageLayoutWithHeader = ({
                     target={isExternal ? "_blank" : "_self"}
                     key={name}
                   >
-                    {isDesktop ? (
-                      <>
-                        {name}
-                        {isExternal && (
-                          <img
-                            className={cx("image")}
-                            src="/icon/external-link.svg"
-                            alt={name}
-                          />
-                        )}
-                      </>
-                    ) : (
+                    {name}
+                    {isExternal && (
                       <img
-                        className={cx("mobileImage")}
-                        src={mobliePath}
+                        className={cx("image")}
+                        src="/icon/external-link.svg"
                         alt={name}
                       />
                     )}
