@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
-const { Content, remarkPluginFrontmatter } = await post.render();
+const { Content, remarkPluginFrontmatter, headings } = await post.render();
 
 const { title, description, pubDate, updatedDate, heroImage } = post.data;
 ---
@@ -41,7 +41,7 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
     </style></head
   >
 
-  <body>
+  <body data-headings={{ headings }}>
     <PageLayoutWithHeader
       title="Scribbled Notes"
       shouldRenderHeader
@@ -69,5 +69,6 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
         <Content />
       </PageSection>
     </PageLayoutWithHeader>
+    <script is:inline define:vars={{ headings }}></script>
   </body>
 </html>

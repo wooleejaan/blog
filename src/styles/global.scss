@@ -1,3 +1,5 @@
+@import "src/styles/utils";
+
 :root {
   --color-white: #fff;
   --color-black: #000;
@@ -199,38 +201,73 @@ a:active {
 }
 
 h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 24px;
-  margin-top: 24px;
+  &.anchor {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    margin-top: 24px;
+
+    & > .anchor-link {
+      color: $color-gray02;
+      padding-right: 6px;
+    }
+  }
 }
 
 h2 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  &.anchor {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    & > .anchor-link {
+      color: $color-gray02;
+      padding-right: 6px;
+    }
+  }
 }
 
 h3 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  margin-top: 16px;
+  &.anchor {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+    & > .anchor-link {
+      color: $color-gray02;
+      padding-right: 6px;
+    }
+  }
 }
 
 h4 {
-  font-size: 24px;
-  font-weight: 500px;
-  margin-bottom: 12px;
-  margin-top: 12px;
+  &.anchor {
+    font-size: 24px;
+    font-weight: 500px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+
+    & > .anchor-link {
+      color: $color-gray02;
+      padding-right: 6px;
+    }
+  }
 }
 
 h5 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  &.anchor {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    & > .anchor-link {
+      color: $color-gray02;
+      padding-right: 6px;
+    }
+  }
 }
 
 p {
@@ -243,6 +280,10 @@ pre {
   padding: 12px 24px 12px 0px;
   margin-bottom: 12px;
   margin-top: 12px;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 img {
