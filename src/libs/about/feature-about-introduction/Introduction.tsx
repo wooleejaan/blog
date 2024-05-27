@@ -27,18 +27,18 @@ const Introduction = () => {
       title: 'Codeit Front-End Sprint Program (Inaugural Class)',
       descriptions: [
         'Mar 2023 - Sep 2023 (7 months)',
-        'Expertise in React ecosystem: TypeScript, NextJS, state management',
-        'Proficient in scalable architectures and monorepo approach',
-        'Skilled in front-end testing, CI/CD pipelines, and deployment',
-        'Versed in collaborative workflows: branching strategies, code reviews',
+        'Expertise in React ecosystem: TypeScript, NextJS, state management.',
+        'Proficient in scalable architectures and monorepo approach.',
+        'Skilled in front-end testing, CI/CD pipelines, and deployment.',
+        'Versed in collaborative workflows: branching strategies, code reviews.',
       ],
     },
     {
       title: 'Yonsei University, Bachelor of Science',
       descriptions: [
         'Mar 2016 - Aug 2022 (6 years, 5 months)',
-        'Majored in Human Environment & Design (Combined Major: Culture and Criticism Studies)',
-        'Studied UX Design, Product Design, and Qualitative/Quantitative UX Research',
+        'Majored in Human Environment & Design (Combined Major: Culture and Criticism Studies).',
+        'Studied UX Design, Product Design, and Qualitative/Quantitative UX Research.',
       ],
     },
   ]
