@@ -43,6 +43,14 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
         font-weight: 400;
       }
 
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 14px;
+      }
+
       .footer {
         margin-top: 48px;
         height: 14px;
@@ -52,13 +60,6 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
         width: fit-content;
         cursor: pointer;
 
-        .image {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 14px;
-          height: 14px;
-        }
         .back {
           font-size: 14px;
           font-weight: 400;
@@ -79,6 +80,7 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
       <PageSection title={title} disableTitleMarginBottom>
         <div class="section">
           <div class="date">
+            <img src="/icon/date.svg" alt="date" class="image" />
             <FormattedDate date={pubDate} />
             {
               updatedDate && (
@@ -88,6 +90,7 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
               )
             }
             ·
+            <img src="/icon/book.svg" alt="book" class="image" />
             <span class="minutesRead"
               >{remarkPluginFrontmatter?.minutesRead}</span
             >
