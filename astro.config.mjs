@@ -7,11 +7,13 @@ import { remarkReadingTime } from "./remark-reading-time.mjs";
 import remarkToc from "remark-toc";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 // https://caseyjamesperno.com/blog/astro-header-anchors/
 export default defineConfig({
-  site: "https://example.com",
+  output: "server",
+  adapter: vercel(),
   build: {
     format: "file",
   },
