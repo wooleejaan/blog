@@ -1,12 +1,13 @@
 @import "src/styles/utils";
 
 .container {
-  width: 100%;
-  max-width: $section-max-content-width;
-  margin: 0 auto;
-  padding: $section-content-padding-top $section-horizontal-padding
-    $section-content-padding-top;
+  padding: $section-content-padding-top 24px $section-content-padding-top;
   position: relative;
+
+  @include desktop {
+    padding: $section-content-padding-top
+      calc((100% - $section-max-content-width) / 2) $section-content-padding-top;
+  }
 
   .contents {
     width: 100%;
@@ -15,8 +16,8 @@
 
     .title {
       margin-bottom: 24px;
-      font-size: 40px;
-      font-weight: 600;
+      font-size: 28px;
+      font-weight: 500;
 
       &.disableTitleMarginBottom {
         margin-bottom: 0;

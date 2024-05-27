@@ -33,19 +33,19 @@ const PageLayoutWithHeader = ({
   }[] = [
     {
       href: "https://github.com/wooleejaan",
-      name: "GitHub",
+      name: "github",
       isExternal: true,
       mobliePath: "/icon/github.svg",
     },
     {
       href: "https://www.linkedin.com/in/wooleejaan/",
-      name: "LinkedIn",
+      name: "linkedin",
       isExternal: true,
       mobliePath: "/icon/linkedin.svg",
     },
     {
       href: "/about",
-      name: "About",
+      name: "about",
       isExternal: false,
       mobliePath: "/icon/about.svg",
     },

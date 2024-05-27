@@ -29,21 +29,47 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
 
       .section {
         position: relative;
+        margin-top: 24px;
+        margin-bottom: 48px;
       }
 
       .date {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 4px;
         color: $color-gray03;
-        margin-bottom: 24px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .footer {
+        margin-top: 48px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        width: fit-content;
+        cursor: pointer;
+
+        .image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 14px;
+          height: 14px;
+        }
+        .back {
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: underline;
+        }
       }
     </style></head
   >
 
   <body data-headings={{ headings }}>
     <PageLayoutWithHeader
-      title="Scribbled Notes"
+      title="yongwoo"
       shouldRenderHeader
       shouldRenderLinks
       client:idle
@@ -67,6 +93,10 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
           </div>
         </div>
         <Content />
+        <button type="button" class="footer" onclick="history.back();">
+          <img src="/icon/arrow-back.svg" alt="back" class="image" />
+          <span class="back">back</span>
+        </button>
       </PageSection>
     </PageLayoutWithHeader>
     <script is:inline define:vars={{ headings }}></script>

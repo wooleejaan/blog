@@ -47,11 +47,13 @@ const Introduction = () => {
     <div className={cx("container")}>
       <div className={cx("section")}>
         <p className={cx("heroText")}>
-          I find joy in logically approaching complex problems and simplifying
-          them. I have a passion for smooth motion interfaces and clean, refined
-          graphic work. I am a quick learner and can rapidly acquire knowledge
-          in any field. I am deeply interested in creating attractive and
-          user-friendly products.
+          <span>
+            I find joy in logically approaching complex problems and simplifying
+            them. I have a passion for smooth motion interfaces and clean,
+            refined graphic work. I am a quick learner and can rapidly acquire
+            knowledge in any field. I am deeply interested in creating
+            attractive and user-friendly products.
+          </span>
         </p>
       </div>
       <div className={cx("section")}>

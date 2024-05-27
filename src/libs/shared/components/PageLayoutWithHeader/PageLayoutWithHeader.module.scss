@@ -12,13 +12,17 @@
   right: 0;
   z-index: 10;
   height: $section-header-height;
-  background-color: transparent;
+  background-color: $color-white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 $section-horizontal-padding;
+  padding: 0 24px;
   border-bottom: 1px solid transparent;
   transition: all 0.3s;
+
+  @include desktop {
+    padding: 0 calc((100% - $section-max-content-width) / 2);
+  }
 
   &.isScrolled {
     background-color: rgba(255, 255, 255, 0.1);
@@ -46,12 +50,13 @@
   width: fit-content;
   height: 100%;
   position: relative;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 16px;
   display: flex;
   align-items: center;
   margin-bottom: 0;
   margin-top: 0;
+  color: $color-gray05;
 }
 
 .nav {
@@ -60,7 +65,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: $color-black;
+  color: $color-gray05;
 
   .navItem {
     position: relative;

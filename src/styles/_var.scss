@@ -2,9 +2,9 @@
 $device-desktop: 992px;
 $section-horizontal-padding: 24px;
 $section-max-width: calc($device-desktop - $section-horizontal-padding);
-$section-max-content-width: calc($section-max-width - 200px);
+$section-max-content-width: calc($section-max-width - 360px);
 $section-header-height: 60px;
-$section-content-padding-top: calc($section-header-height * 2.5);
+$section-content-padding-top: calc($section-header-height * 1.5);
 $section-footer-height: 84px;
 
 $color-white: #fff;

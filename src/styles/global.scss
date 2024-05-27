@@ -200,52 +200,16 @@ a:active {
   outline: none;
 }
 
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
 h1 {
   &.anchor {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 24px;
-    margin-top: 24px;
-
-    & > .anchor-link {
-      color: $color-gray02;
-      padding-right: 6px;
-    }
-  }
-}
-
-h2 {
-  &.anchor {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
-    & > .anchor-link {
-      color: $color-gray02;
-      padding-right: 6px;
-    }
-  }
-}
-
-h3 {
-  &.anchor {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    margin-top: 16px;
-
-    & > .anchor-link {
-      color: $color-gray02;
-      padding-right: 6px;
-    }
-  }
-}
-
-h4 {
-  &.anchor {
     font-size: 24px;
-    font-weight: 500px;
+    font-weight: 500;
     margin-bottom: 12px;
     margin-top: 12px;
 
@@ -256,7 +220,21 @@ h4 {
   }
 }
 
-h5 {
+h2 {
+  &.anchor {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 11px;
+    margin-top: 11px;
+
+    & > .anchor-link {
+      color: $color-gray02;
+      padding-right: 6px;
+    }
+  }
+}
+
+h3 {
   &.anchor {
     font-size: 20px;
     font-weight: 500;
@@ -270,10 +248,43 @@ h5 {
   }
 }
 
+h4 {
+  &.anchor {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 9px;
+    margin-top: 9px;
+
+    & > .anchor-link {
+      color: $color-gray02;
+      padding-right: 6px;
+    }
+  }
+}
+
+h5 {
+  &.anchor {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+    & > .anchor-link {
+      color: $color-gray02;
+      padding-right: 6px;
+    }
+  }
+}
+
 p {
   font-size: 16px;
   font-weight: 400;
-  color: #494848;
+  color: $color-gray05;
+
+  & code {
+    background-color: $color-gray01-50;
+    padding: 2px 4px;
+  }
 }
 
 pre {
@@ -309,9 +320,15 @@ ol {
   gap: 4px;
   margin-bottom: 12px;
   margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color-gray05;
 }
 
 li {
   list-style-type: none;
   padding-left: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color-gray05;
 }
