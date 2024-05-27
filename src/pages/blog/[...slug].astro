@@ -46,6 +46,10 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data
         color: $color-gray03;
         font-size: 14px;
         font-weight: 400;
+
+        & > .image {
+          padding-right: 4px;
+        }
       }
 
       .image {
@@ -88,9 +92,9 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data
             <FormattedDate date={pubDate} />
             {
               updatedDate && (
-                <div class="last-updated-on">
+                <span class="last-updated-on">
                   (Last updated on <FormattedDate date={updatedDate} />)
-                </div>
+                </span>
               )
             }
             ·
