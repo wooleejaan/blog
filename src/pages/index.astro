@@ -1,22 +1,22 @@
 ---
-import BaseHead from "../libs/blog/BaseHead.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import PageLayoutWithHeader from "../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader";
-import PageSection from "../libs/shared/components/PageSection/PageSection";
-import { getCollection } from "astro:content";
-import FormattedDate from "../libs/blog/FormattedDate.astro";
+import BaseHead from '../libs/blog/BaseHead.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import PageLayoutWithHeader from '../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader'
+import PageSection from '../libs/shared/components/PageSection/PageSection'
+import { getCollection } from 'astro:content'
+import FormattedDate from '../libs/blog/FormattedDate.astro'
 
-const { pathname } = Astro.url;
-const subpath = pathname.match(/[^\/]+/g);
-const baseHref = "/";
-const isHome = baseHref === pathname || baseHref === "/" + subpath?.[0];
+const { pathname } = Astro.url
+const subpath = pathname.match(/[^\/]+/g)
+const baseHref = '/'
+const isHome = baseHref === pathname || baseHref === '/' + subpath?.[0]
 
-const posts = (await getCollection("blog")).sort(
+const posts = (await getCollection('blog')).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-);
+)
 
 if (!posts) {
-  return Astro.redirect("/404");
+  return Astro.redirect('/404')
 }
 ---
 
@@ -25,7 +25,7 @@ if (!posts) {
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style lang="scss">
-      @import "src/styles/utils";
+      @import 'src/styles/utils';
 
       .hero {
         color: $color-gray05;
@@ -75,7 +75,7 @@ if (!posts) {
         color: $color-gray05;
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 0;
           left: 0;
@@ -102,7 +102,7 @@ if (!posts) {
       <PageSection disableTitleMarginBottom>
         <div class="hero">
           <span>
-            Hi, I'm{" "}
+            Hi, I'm{' '}
             <a
               href="https://github.com/wooleejaan"
               target="_blank"
@@ -110,9 +110,9 @@ if (!posts) {
             >
               yongwoo</a
             >
-            , a software engineer based in Seoul. I'm currently developing{" "}
+            , a software engineer based in Seoul. I'm currently developing{' '}
             <a href="https://www.prix.im/" target="_blank" class="link">
-              Prix{" "}
+              Prix{' '}
             </a>
             full-time. Here, I write about things I learn and find interesting. <a
               class="link"

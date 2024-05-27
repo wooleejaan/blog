@@ -1,23 +1,23 @@
 ---
-import BaseHead from "../libs/blog/BaseHead.astro";
-import Introduction from "../libs/about/feature-about-introduction/Introduction";
-import PageLayoutWithHeader from "../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader";
-import PageSection from "../libs/shared/components/PageSection/PageSection";
+import BaseHead from '../libs/blog/BaseHead.astro'
+import Introduction from '../libs/about/feature-about-introduction/Introduction'
+import PageLayoutWithHeader from '../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader'
+import PageSection from '../libs/shared/components/PageSection/PageSection'
 
-const { pathname } = Astro.url;
-const subpath = pathname.match(/[^\/]+/g);
-const baseHref = "/";
-const isHome = baseHref === pathname || baseHref === "/" + subpath?.[0];
+const { pathname } = Astro.url
+const subpath = pathname.match(/[^\/]+/g)
+const baseHref = '/'
+const isHome = baseHref === pathname || baseHref === '/' + subpath?.[0]
 
-const pageTitle = "Engineer, Designer, and Simplifier";
+const pageTitle = 'Engineer, Designer, and Simplifier'
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={"About"} description={""} />
+    <BaseHead title={'About'} description={''} />
     <style lang="scss">
-      @import "src/styles/utils";
+      @import 'src/styles/utils';
 
       .footer {
         margin-top: 48px;

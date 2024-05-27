@@ -1,28 +1,28 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
-import BaseHead from "../../libs/blog/BaseHead.astro";
-import PageLayoutWithHeader from "../../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader";
-import PageSection from "../../libs/shared/components/PageSection/PageSection";
-import FormattedDate from "../../libs/blog/FormattedDate.astro";
+import { type CollectionEntry, getCollection } from 'astro:content'
+import BaseHead from '../../libs/blog/BaseHead.astro'
+import PageLayoutWithHeader from '../../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader'
+import PageSection from '../../libs/shared/components/PageSection/PageSection'
+import FormattedDate from '../../libs/blog/FormattedDate.astro'
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const posts = await getCollection('blog')
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: post,
-  }));
+  }))
 }
-type Props = CollectionEntry<"blog">;
+type Props = CollectionEntry<'blog'>
 
-const post = Astro.props;
+const post = Astro.props
 
 if (!post) {
-  return Astro.redirect("/404");
+  return Astro.redirect('/404')
 }
 
-const { Content, remarkPluginFrontmatter, headings } = await post.render();
+const { Content, remarkPluginFrontmatter, headings } = await post.render()
 
-const { title, description, pubDate, updatedDate, heroImage } = post.data;
+const { title, description, pubDate, updatedDate, heroImage } = post.data
 ---
 
 <!doctype html>
@@ -30,7 +30,7 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data;
   <head>
     <BaseHead title={title} description={description} />
     <style lang="scss">
-      @import "src/styles/utils";
+      @import 'src/styles/utils';
 
       .section {
         position: relative;

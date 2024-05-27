@@ -1,8 +1,8 @@
 ---
-title: "test2"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 01 2022"
-updatedDate: "Jul 03 2023"
+title: 'test2'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Jul 01 2022'
+updatedDate: 'Jul 03 2023'
 ---
 
 dasdadasda
@@ -24,7 +24,7 @@ dasda
 dasda
 
 ```js
-const cs = "dasdada";
+const cs = 'dasdada'
 ```
 
 # h1
@@ -40,12 +40,12 @@ dasda
 dasda
 
 ```js
-const cs = "dasdada";
-const cs = "dasdada";
-const cs = "dasdada";
-const cs = "dasdada";
-const cs = "dasdada";
-const cs = "dasdada";
+const cs = 'dasdada'
+const cs = 'dasdada'
+const cs = 'dasdada'
+const cs = 'dasdada'
+const cs = 'dasdada'
+const cs = 'dasdada'
 ```
 
 ```ts
@@ -53,7 +53,7 @@ interface Props {}
 ```
 
 ```tsx
-export default Component = () => {};
+export default Component = () => {}
 ```
 
 dasdasd

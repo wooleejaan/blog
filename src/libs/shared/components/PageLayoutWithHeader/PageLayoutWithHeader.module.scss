@@ -1,4 +1,4 @@
-@import "src/styles/utils";
+@import 'src/styles/utils';
 
 .container {
   width: 100%;
@@ -80,7 +80,7 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;

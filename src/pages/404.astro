@@ -1,23 +1,23 @@
 ---
-import BaseHead from "../libs/blog/BaseHead.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import PageLayoutWithHeader from "../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader";
-import PageSection from "../libs/shared/components/PageSection/PageSection";
+import BaseHead from '../libs/blog/BaseHead.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import PageLayoutWithHeader from '../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader'
+import PageSection from '../libs/shared/components/PageSection/PageSection'
 
 const NOT_FOUND_TEXT = [
-  "art has no rules.",
-  "perfectly imperfect.",
-  "everything can change in just one day.",
-  "silence is luxurious.",
-  "little things mean a lot.",
-  "keep it simple.",
-  "less, but better.",
-  "the beauty of silence.",
-  "art is not what you see.",
-  "less is the new more.",
-];
+  'art has no rules.',
+  'perfectly imperfect.',
+  'everything can change in just one day.',
+  'silence is luxurious.',
+  'little things mean a lot.',
+  'keep it simple.',
+  'less, but better.',
+  'the beauty of silence.',
+  'art is not what you see.',
+  'less is the new more.',
+]
 
-const paragraphGenerator = () => NOT_FOUND_TEXT[Math.floor(Math.random() * 10)];
+const paragraphGenerator = () => NOT_FOUND_TEXT[Math.floor(Math.random() * 10)]
 ---
 
 <!doctype html>
@@ -25,7 +25,7 @@ const paragraphGenerator = () => NOT_FOUND_TEXT[Math.floor(Math.random() * 10)];
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style lang="scss">
-      @import "src/styles/utils";
+      @import 'src/styles/utils';
 
       .hero {
         color: $color-gray05;
