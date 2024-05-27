@@ -14,6 +14,10 @@ const isHome = baseHref === pathname || baseHref === "/" + subpath?.[0];
 const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
+
+if (!posts) {
+  return Astro.redirect("/404");
+}
 ---
 
 <!doctype html>

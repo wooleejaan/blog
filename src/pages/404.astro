@@ -1,0 +1,74 @@
+---
+import BaseHead from "../libs/blog/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import PageLayoutWithHeader from "../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader";
+import PageSection from "../libs/shared/components/PageSection/PageSection";
+
+const NOT_FOUND_TEXT = [
+  "art has no rules.",
+  "perfectly imperfect.",
+  "everything can change in just one day.",
+  "silence is luxurious.",
+  "little things mean a lot.",
+  "keep it simple.",
+  "less, but better.",
+  "the beauty of silence.",
+  "art is not what you see.",
+  "less is the new more.",
+];
+
+const paragraphGenerator = () => NOT_FOUND_TEXT[Math.floor(Math.random() * 10)];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style lang="scss">
+      @import "src/styles/utils";
+
+      .hero {
+        color: $color-gray05;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 14px;
+      }
+
+      .back {
+        margin-top: 48px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        width: fit-content;
+        cursor: pointer;
+
+        .back-text {
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <PageLayoutWithHeader title="yongwoo" client:idle>
+      <PageSection disableTitleMarginBottom>
+        <div class="hero">
+          <span>not found : {`${paragraphGenerator()}`}</span>
+          <button type="button" class="back" onclick="history.back();">
+            <img src="/icon/arrow-back.svg" alt="back" class="image" />
+            <span class="back-text">back</span>
+          </button>
+        </div>
+      </PageSection>
+    </PageLayoutWithHeader>
+  </body>
+</html>
