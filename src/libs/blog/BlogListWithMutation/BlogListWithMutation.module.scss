@@ -26,6 +26,10 @@
     transition: color 0.3s;
     color: $color-gray03 !important;
   }
+
+  &.disableClick {
+    cursor: not-allowed;
+  }
 }
 
 .date {

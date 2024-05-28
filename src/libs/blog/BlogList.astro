@@ -6,14 +6,20 @@ type Props = {
   items: CollectionEntry<'note' | 'post' | 'collection'>[]
   title: string
   pathName: string
+  disableClick?: boolean
 }
 
-const { items, title, pathName } = Astro.props
+const { items, title, pathName, disableClick = false } = Astro.props
 ---
 
 <div class="list">
   <h3 class="listTitle">{title}</h3>
-  <BlogListWithMutation client:load items={items} pathName={pathName} />
+  <BlogListWithMutation
+    client:load
+    items={items}
+    pathName={pathName}
+    disableClick={disableClick}
+  />
 </div>
 <style lang="scss">
   @import 'src/styles/utils';

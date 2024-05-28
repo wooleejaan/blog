@@ -15,11 +15,13 @@ interface Data {
 interface Props<T> {
   items: T[]
   pathName: string
+  disableClick?: boolean
 }
 
 const BlogListWithMutation = <T extends Data>({
   items,
   pathName,
+  disableClick = false,
 }: Props<T>) => {
   const [showItems, setShowItems] = useState<Data[]>(items.slice(0, 3))
 
@@ -43,9 +45,15 @@ const BlogListWithMutation = <T extends Data>({
               })}
             </time>
           </span>
-          <a href={`/${pathName}/${post.slug}`} className={cx('title')}>
-            {post.data.title}
-          </a>
+          {disableClick ? (
+            <span className={cx('title', { disableClick })}>
+              {post.data.title}
+            </span>
+          ) : (
+            <a href={`/${pathName}/${post.slug}`} className={cx('title')}>
+              {post.data.title}
+            </a>
+          )}
         </div>
       ))}
       {shouldRenderMoreButton() && (

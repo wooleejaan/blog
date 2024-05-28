@@ -1,7 +1,7 @@
 ---
-title: 'Using MDX323232Valut테스트'
+title: 'test'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 02 2022'
+pubDate: 'Jul 01 2022'
 updatedDate: 'Jul 03 2023'
 ---
 
@@ -9,7 +9,7 @@ dasdadasda
 
 # h1
 
-dasdsada
+dasdsada `dasdsada`
 
 ## h2
 
