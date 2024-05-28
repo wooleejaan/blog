@@ -210,8 +210,9 @@ h1 {
   &.anchor {
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 12px;
-    margin-top: 12px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    border-bottom: 1px solid $color-gray01-50;
 
     & > .anchor-link {
       color: $color-gray02;
@@ -224,8 +225,9 @@ h2 {
   &.anchor {
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 11px;
-    margin-top: 11px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    border-bottom: 1px solid $color-gray01-50;
 
     & > .anchor-link {
       color: $color-gray02;
@@ -238,8 +240,9 @@ h3 {
   &.anchor {
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid $color-gray01-50;
 
     & > .anchor-link {
       color: $color-gray02;
@@ -252,8 +255,9 @@ h4 {
   &.anchor {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 9px;
-    margin-top: 9px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    border-bottom: 1px solid $color-gray01-50;
 
     & > .anchor-link {
       color: $color-gray02;
@@ -266,8 +270,9 @@ h5 {
   &.anchor {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 8px;
-    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    border-bottom: 1px solid $color-gray01-50;
 
     & > .anchor-link {
       color: $color-gray02;
@@ -280,10 +285,22 @@ p {
   font-size: 16px;
   font-weight: 400;
   color: $color-gray05;
+  margin-top: 12px;
+  margin-bottom: 12px;
 
   & code {
+    font-size: 14px;
+    font-weight: 400;
     background-color: $color-gray01-50;
     padding: 2px 4px;
+  }
+
+  & > a {
+    text-decoration: underline !important;
+
+    &:hover {
+      color: $color-gray04;
+    }
   }
 }
 
@@ -309,8 +326,8 @@ blockquote {
   background-color: #d4d4d44d;
   padding: 12px 24px;
   border-radius: 10px;
-  margin-bottom: 12px;
-  margin-top: 12px;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 ol {
@@ -323,11 +340,23 @@ ol {
   font-size: 16px;
   font-weight: 400;
   color: $color-gray05;
+  list-style-type: decimal;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color-gray05;
 }
 
 li {
-  list-style-type: none;
-  padding-left: 6px;
+  margin-left: 20px;
   font-size: 16px;
   font-weight: 400;
   color: $color-gray05;
