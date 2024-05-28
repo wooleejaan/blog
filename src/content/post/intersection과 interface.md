@@ -44,6 +44,6 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
 
 #### 참고 자료
 
-[TypeScript Performance Wiki](https://github.com/microsoft/TypeScript/wiki/Performance)<br>
-[Prefer type over interface](https://johnaaronnelson.com/prefer-type/)<br>
-[This Pattern Will Wreck Your React App's TS Performance](https://www.totaltypescript.com/react-apps-ts-performance)
+<a href="https://github.com/microsoft/TypeScript/wiki/Performance" target="_blank">TypeScript Performance Wiki</a><br>
+<a href="https://johnaaronnelson.com/prefer-type/" target="_blank">Prefer type over interface</a><br>
+<a href="https://www.totaltypescript.com/react-apps-ts-performance" target="_blank">This Pattern Will Wreck Your React App's TS Performance</a><br>

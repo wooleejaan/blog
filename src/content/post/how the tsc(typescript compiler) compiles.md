@@ -25,5 +25,5 @@ Emitting 단계에서 tsc의 [emitter](https://github.com/microsoft/TypeScript/b
 
 #### 참고 자료
 
-[How the TypeScript Compiler Compiles - understanding the compiler internal](https://www.youtube.com/watch?v=X8k_4tZ16qU)<br>
-[[Github] microsoft/TypeScript-Compiler-Notes](https://github.com/microsoft/TypeScript-Compiler-Notes)
+<a href="https://www.youtube.com/watch?v=X8k_4tZ16qU" target="_blank">How the TypeScript Compiler Compiles - understanding the compiler internal</a><br>
+<a href="https://github.com/microsoft/TypeScript-Compiler-Notes" target="_blank">[Github] microsoft/TypeScript-Compiler-Notes</a><br>

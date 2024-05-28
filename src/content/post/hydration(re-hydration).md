@@ -24,11 +24,11 @@ hydration은 초기 렌더링 후 상호작용이 가능한 시점까지의 대�
 
 #### 참고 자료
 
-[Progressive Hydration](https://www.patterns.dev/react/progressive-hydration)<br>
-[Time to Interactive (TTI)](https://web.dev/articles/tti)<br>
-[Partial Hydration](https://www.gatsbyjs.com/docs/conceptual/partial-hydration/)<br>
-[Rendering on the Web](https://web.dev/articles/rendering-on-the-web)<br>
-[React.js Hydration: What It Is and Why It Matters for Your Web Development Projects](https://www.linkedin.com/pulse/reactjs-hydration-what-why-matters-your-web-projects-shourav-rahman/)<br>
-[A look at React hydration and pre-rendered HTML](https://blog.logrocket.com/react-hydration-pre-rendered-html/)<br>
-[Understanding React Hydration](https://www.gatsbyjs.com/docs/conceptual/react-hydration/)
-[hydrateRoot](https://react.dev/reference/react-dom/client/hydrateRoot)
+<a href="https://www.patterns.dev/react/progressive-hydration" target="_blank">Progressive Hydration</a><br>
+<a href="https://web.dev/articles/tti" target="_blank">Time to Interactive (TTI)</a><br>
+<a href="https://www.gatsbyjs.com/docs/conceptual/partial-hydration/" target="_blank">Partial Hydration</a><br>
+<a href="https://web.dev/articles/rendering-on-the-web" target="_blank">Rendering on the Web</a><br>
+<a href="https://www.linkedin.com/pulse/reactjs-hydration-what-why-matters-your-web-projects-shourav-rahman/" target="_blank">React.js Hydration: What It Is and Why It Matters for Your Web Development Projects</a><br>
+<a href="https://blog.logrocket.com/react-hydration-pre-rendered-html/" target="_blank">A look at React hydration and pre-rendered HTML</a><br>
+<a href="https://www.gatsbyjs.com/docs/conceptual/react-hydration/" target="_blank">Understanding React Hydration</a><br>
+<a href="https://react.dev/reference/react-dom/client/hydrateRoot" target="_blank">hydrateRoot</a><br>

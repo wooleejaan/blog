@@ -56,10 +56,10 @@ html 파일을 파싱하다가 script 태그를 만나면 멈춘다. 이때 제�
 
 #### 참고 자료
 
-[Event Loop in Chrome browser](https://serhiikoziy.medium.com/event-loop-in-chrome-browser-72bd6c8db033)<br>
-[Browser Event loop: micro and macro tasks, call stack, render queue: layout, paint, composite](https://blog.xnim.me/event-loop-and-render-queue)<br>
-[What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)<br>
-[Jake Archibald: IN THE LOOP - JSConf.Asia](https://www.youtube.com/watch?v=cCOL7MC4Pl0)<br>
-[Inside look at modern web browser (part 1)](https://developer.chrome.com/blog/inside-browser-part1/)<br>
-[JavaScript and the event queue!](https://dev.to/darken/javascript-and-the-event-loop-5dpb)<br>
-[JavaScript Visualized - Event Loop, Web APIs, (Micro)task Queue](https://www.youtube.com/watch?v=eiC58R16hb8)
+<a href="https://serhiikoziy.medium.com/event-loop-in-chrome-browser-72bd6c8db033" target="_blank">Event Loop in Chrome browser</a><br>
+<a href="https://blog.xnim.me/event-loop-and-render-queue" target="_blank">Browser Event loop: micro and macro tasks, call stack, render queue: layout, paint, composite</a><br>
+<a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" target="_blank">What the heck is the event loop anyway? | Philip Roberts | JSConf EU</a><br>
+<a href="https://www.youtube.com/watch?v=cCOL7MC4Pl0" target="_blank">Jake Archibald: IN THE LOOP - JSConf.Asia</a><br>
+<a href="https://developer.chrome.com/blog/inside-browser-part1/" target="_blank">Inside look at modern web browser (part 1)</a><br>
+<a href="https://dev.to/darken/javascript-and-the-event-loop-5dpb" target="_blank">JavaScript and the event queue!</a><br>
+<a href="https://www.youtube.com/watch?v=eiC58R16hb8" target="_blank">JavaScript Visualized - Event Loop, Web APIs, (Micro)task Queue</a><br>

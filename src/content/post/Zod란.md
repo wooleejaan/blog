@@ -95,6 +95,6 @@ async function getData() {
 
 #### 참고 자료
 
-[Zod: The Next Biggest thing after Typescript](https://dev.to/jareechang/zod-the-next-biggest-thing-after-typescript-4phh)<br>
-[When should you use Zod?](https://www.totaltypescript.com/when-should-you-use-zod)<br>
-[Zod For Data Validation In TypeScript](https://codedamn.com/news/javascript/zod-getting-started)
+<a href="https://dev.to/jareechang/zod-the-next-biggest-thing-after-typescript-4phh" target="_blank">Zod: The Next Biggest thing after Typescript</a><br>
+<a href="https://www.totaltypescript.com/when-should-you-use-zod" target="_blank">When should you use Zod?</a><br>
+<a href="https://codedamn.com/news/javascript/zod-getting-started" target="_blank">Zod For Data Validation In TypeScript</a><br>

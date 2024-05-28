@@ -72,4 +72,4 @@ interface Red extends ColorInterface {
 
 #### 참고 자료
 
-[Understanding ”As Const” in TypeScript](https://www.omarileon.me/blog/typescript-as-const)
+<a href="https://www.omarileon.me/blog/typescript-as-const" target="_blank">Understanding ”As Const” in TypeScript</a>
