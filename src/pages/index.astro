@@ -11,11 +11,19 @@ const subpath = pathname.match(/[^\/]+/g)
 const baseHref = '/'
 const isHome = baseHref === pathname || baseHref === '/' + subpath?.[0]
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('post')).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 )
 
-if (!posts) {
+const notes = (await getCollection('note')).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+)
+
+const collections = (await getCollection('collection')).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+)
+
+if (!posts || !notes || !collections) {
   return Astro.redirect('/404')
 }
 ---
@@ -34,7 +42,7 @@ if (!posts) {
           text-decoration: underline;
 
           &:hover {
-            color: $color-gray05;
+            color: $color-gray04;
           }
         }
       }
@@ -73,25 +81,16 @@ if (!posts) {
         font-weight: 400;
         position: relative;
         color: $color-gray05;
+        text-decoration: underline;
 
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 0%;
-          height: 1px;
-          background-color: $color-gray05;
-        }
-
-        &:hover::after {
-          transition: all 0.3s;
-          width: 100%;
+        &:hover {
+          transition: color 0.3s;
+          color: $color-gray04;
         }
       }
 
       .date {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
         color: $color-gray02;
       }
@@ -121,14 +120,44 @@ if (!posts) {
           </span>
         </div>
         <div class="list">
-          <h3 class="listTitle">scribbled notes</h3>
+          <h3 class="listTitle">posts</h3>
           {
             posts.map((post) => (
               <div class="item">
                 <span class="date">
                   <FormattedDate date={post.data.pubDate} />
                 </span>
-                <a href={`/blog/${post.slug}`} class="title">
+                <a href={`/post/${post.slug}`} class="title">
+                  {post.data.title}
+                </a>
+              </div>
+            ))
+          }
+        </div>
+        <div class="list">
+          <h3 class="listTitle">scribbled notes</h3>
+          {
+            notes.map((post) => (
+              <div class="item">
+                <span class="date">
+                  <FormattedDate date={post.data.pubDate} />
+                </span>
+                <a href={`/note/${post.slug}`} class="title">
+                  {post.data.title}
+                </a>
+              </div>
+            ))
+          }
+        </div>
+        <div class="list">
+          <h3 class="listTitle">collections</h3>
+          {
+            collections.map((post) => (
+              <div class="item">
+                <span class="date">
+                  <FormattedDate date={post.data.pubDate} />
+                </span>
+                <a href={`/collection/${post.slug}`} class="title">
                   {post.data.title}
                 </a>
               </div>

@@ -1,0 +1,116 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content'
+import BaseHead from '../../libs/blog/BaseHead.astro'
+import PageLayoutWithHeader from '../../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader'
+import PageSection from '../../libs/shared/components/PageSection/PageSection'
+import FormattedDate from '../../libs/blog/FormattedDate.astro'
+
+export async function getStaticPaths() {
+  const notes = await getCollection('note')
+  return notes.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }))
+}
+type Props = CollectionEntry<'note'>
+
+const post = Astro.props
+
+if (!post) {
+  return Astro.redirect('/404')
+}
+
+const { Content, remarkPluginFrontmatter, headings } = await post.render()
+
+const { title, description, pubDate, updatedDate, heroImage } = post.data
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+    <style lang="scss">
+      @import 'src/styles/utils';
+
+      .section {
+        position: relative;
+        margin-top: 24px;
+        margin-bottom: 48px;
+      }
+
+      .date {
+        height: 14px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: $color-gray03;
+        font-size: 14px;
+        font-weight: 400;
+
+        & > .image {
+          padding-right: 4px;
+        }
+      }
+
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 14px;
+      }
+
+      .footer {
+        margin-top: 48px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        width: fit-content;
+        cursor: pointer;
+
+        .back {
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+      }
+    </style></head
+  >
+
+  <body data-headings={{ headings }}>
+    <PageLayoutWithHeader
+      title="yongwoo"
+      shouldRenderHeader
+      client:idle
+      pageTitle={title}
+    >
+      <PageSection title={title} disableTitleMarginBottom>
+        <div class="section">
+          <div class="date">
+            <img src="/icon/date.svg" alt="date" class="image" />
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <span class="last-updated-on">
+                  (Last updated on <FormattedDate date={updatedDate} />)
+                </span>
+              )
+            }
+            ·
+            <img src="/icon/book.svg" alt="book" class="image" />
+            <span class="minutesRead"
+              >{remarkPluginFrontmatter?.minutesRead}</span
+            >
+          </div>
+        </div>
+        <Content />
+        <button type="button" class="footer" onclick="history.back();">
+          <img src="/icon/arrow-back.svg" alt="back" class="image" />
+          <span class="back">back</span>
+        </button>
+      </PageSection>
+    </PageLayoutWithHeader>
+    <script is:inline define:vars={{ headings }}></script>
+  </body>
+</html>

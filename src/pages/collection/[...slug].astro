@@ -6,13 +6,13 @@ import PageSection from '../../libs/shared/components/PageSection/PageSection'
 import FormattedDate from '../../libs/blog/FormattedDate.astro'
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog')
-  return posts.map((post) => ({
+  const collections = await getCollection('collection')
+  return collections.map((post) => ({
     params: { slug: post.slug },
     props: post,
   }))
 }
-type Props = CollectionEntry<'blog'>
+type Props = CollectionEntry<'collection'>
 
 const post = Astro.props
 
