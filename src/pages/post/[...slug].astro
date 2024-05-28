@@ -3,7 +3,8 @@ import { type CollectionEntry, getCollection } from 'astro:content'
 import BaseHead from '../../libs/blog/BaseHead.astro'
 import PageLayoutWithHeader from '../../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader'
 import PageSection from '../../libs/shared/components/PageSection/PageSection'
-import FormattedDate from '../../libs/blog/FormattedDate.astro'
+import BackButton from '../../libs/blog/BackButton.astro'
+import BlogDetailHeaderSection from '../../libs/blog/BlogDetailHeaderSection.astro'
 
 export async function getStaticPaths() {
   const posts = await getCollection('post')
@@ -22,7 +23,7 @@ if (!post) {
 
 const { Content, remarkPluginFrontmatter, headings } = await post.render()
 
-const { title, description, pubDate, updatedDate, heroImage } = post.data
+const { title, description, pubDate, updatedDate } = post.data
 ---
 
 <!doctype html>
@@ -59,22 +60,6 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data
         width: 14px;
         height: 14px;
       }
-
-      .footer {
-        margin-top: 48px;
-        height: 14px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        width: fit-content;
-        cursor: pointer;
-
-        .back {
-          font-size: 14px;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-      }
     </style></head
   >
 
@@ -86,29 +71,13 @@ const { title, description, pubDate, updatedDate, heroImage } = post.data
       pageTitle={title}
     >
       <PageSection title={title} disableTitleMarginBottom>
-        <div class="section">
-          <div class="date">
-            <img src="/icon/date.svg" alt="date" class="image" />
-            <FormattedDate date={pubDate} />
-            {
-              updatedDate && (
-                <span class="last-updated-on">
-                  (Last updated on <FormattedDate date={updatedDate} />)
-                </span>
-              )
-            }
-            ·
-            <img src="/icon/book.svg" alt="book" class="image" />
-            <span class="minutesRead"
-              >{remarkPluginFrontmatter?.minutesRead}</span
-            >
-          </div>
-        </div>
+        <BlogDetailHeaderSection
+          pubDate={pubDate}
+          updatedDate={updatedDate ?? new Date()}
+          minutesRead={remarkPluginFrontmatter.minutesRead}
+        />
         <Content />
-        <button type="button" class="footer" onclick="history.back();">
-          <img src="/icon/arrow-back.svg" alt="back" class="image" />
-          <span class="back">back</span>
-        </button>
+        <BackButton />
       </PageSection>
     </PageLayoutWithHeader>
     <script is:inline define:vars={{ headings }}></script>

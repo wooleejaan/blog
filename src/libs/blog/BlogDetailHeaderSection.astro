@@ -1,0 +1,59 @@
+---
+import FormattedDate from './FormattedDate.astro'
+
+interface Props {
+  pubDate: Date
+  updatedDate: Date
+  minutesRead: string
+}
+
+const { pubDate, updatedDate, minutesRead } = Astro.props
+---
+
+<div class="section">
+  <div class="date">
+    <img src="/icon/date.svg" alt="date" class="image" />
+    <FormattedDate date={pubDate} />
+    {
+      updatedDate && (
+        <span class="last-updated-on">
+          (Last updated on <FormattedDate date={updatedDate} />)
+        </span>
+      )
+    }
+    ·
+    <img src="/icon/book.svg" alt="book" class="image" />
+    <span class="minutesRead">{minutesRead}</span>
+  </div>
+</div>
+<style lang="scss">
+  @import 'src/styles/utils';
+
+  .section {
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
+  .date {
+    height: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: $color-gray03;
+    font-size: 14px;
+    font-weight: 400;
+
+    & > .image {
+      padding-right: 4px;
+    }
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+  }
+</style>

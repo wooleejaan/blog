@@ -3,11 +3,7 @@ import BaseHead from '../libs/blog/BaseHead.astro'
 import Introduction from '../libs/about/feature-about-introduction/Introduction'
 import PageLayoutWithHeader from '../libs/shared/components/PageLayoutWithHeader/PageLayoutWithHeader'
 import PageSection from '../libs/shared/components/PageSection/PageSection'
-
-const { pathname } = Astro.url
-const subpath = pathname.match(/[^\/]+/g)
-const baseHref = '/'
-const isHome = baseHref === pathname || baseHref === '/' + subpath?.[0]
+import BackButton from '../libs/blog/BackButton.astro'
 
 const pageTitle = 'Engineer, Designer, and Simplifier'
 ---
@@ -16,32 +12,6 @@ const pageTitle = 'Engineer, Designer, and Simplifier'
 <html lang="en">
   <head>
     <BaseHead title={'About'} description={''} />
-    <style lang="scss">
-      @import 'src/styles/utils';
-
-      .footer {
-        margin-top: 48px;
-        height: 14px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        width: fit-content;
-        cursor: pointer;
-
-        .image {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 14px;
-          height: 14px;
-        }
-        .back {
-          font-size: 14px;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-      }
-    </style>
   </head>
   <body>
     <PageLayoutWithHeader
@@ -52,10 +22,7 @@ const pageTitle = 'Engineer, Designer, and Simplifier'
     >
       <PageSection title={pageTitle}>
         <Introduction />
-        <button type="button" class="footer" onclick="history.back();">
-          <img src="/icon/arrow-back.svg" alt="back" class="image" />
-          <span class="back">back</span>
-        </button>
+        <BackButton />
       </PageSection>
     </PageLayoutWithHeader>
   </body>
