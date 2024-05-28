@@ -25,6 +25,8 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: 'vitesse-light',
+      // theme: 'catppuccin-latte',
+      // theme: 'css-variables',
     },
     gfm: false,
     extendDefaultPlugins: false,

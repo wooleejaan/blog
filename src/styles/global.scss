@@ -305,9 +305,11 @@ p {
 }
 
 pre {
-  padding: 12px 24px 12px 0px;
+  padding: 12px 24px;
   margin-bottom: 12px;
   margin-top: 12px;
+  background-color: $color-gray01-10 !important;
+  border-radius: 10px;
 
   &:focus {
     outline: none;
