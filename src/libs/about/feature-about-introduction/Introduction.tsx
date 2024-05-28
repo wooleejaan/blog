@@ -63,8 +63,8 @@ const Introduction = () => {
             <div className={cx('item')} key={title}>
               <div className={cx('itemTitle')}>{title}</div>
               <div className={cx('descriptions')}>
-                {descriptions.map((description) => (
-                  <li>- {description}</li>
+                {descriptions.map((description, index) => (
+                  <li key={index.toString()}>- {description}</li>
                 ))}
               </div>
             </div>
@@ -78,8 +78,8 @@ const Introduction = () => {
             <div className={cx('item')} key={title}>
               <div className={cx('itemTitle')}>{title}</div>
               <div className={cx('descriptions')}>
-                {descriptions.map((description) => (
-                  <li>- {description}</li>
+                {descriptions.map((description, index) => (
+                  <li key={index.toString()}>- {description}</li>
                 ))}
               </div>
             </div>
