@@ -297,6 +297,8 @@ p {
 
   & > a {
     text-decoration: underline !important;
+    font-size: 14px;
+    font-weight: 400;
 
     &:hover {
       color: $color-gray04;

@@ -29,6 +29,10 @@
 
   &.disableClick {
     cursor: not-allowed;
+
+    &:hover {
+      color: $color-gray04 !important;
+    }
   }
 }
 
