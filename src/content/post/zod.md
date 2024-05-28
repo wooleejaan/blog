@@ -1,5 +1,5 @@
 ---
-title: 'Zod란'
+title: 'zod'
 description: 'Zod는 무엇이고 언제 왜 사용하는가'
 pubDate: 'May 05 2024'
 ---
