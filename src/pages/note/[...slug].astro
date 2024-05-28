@@ -28,40 +28,7 @@ const { title, description, pubDate, updatedDate } = post.data
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title={title} description={description} />
-    <style lang="scss">
-      @import 'src/styles/utils';
-
-      .section {
-        position: relative;
-        margin-top: 24px;
-        margin-bottom: 48px;
-      }
-
-      .date {
-        height: 14px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        color: $color-gray03;
-        font-size: 14px;
-        font-weight: 400;
-
-        & > .image {
-          padding-right: 4px;
-        }
-      }
-
-      .image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 14px;
-        height: 14px;
-      }
-    </style></head
-  >
+  <head><BaseHead title={title} description={description} /></head>
 
   <body data-headings={{ headings }}>
     <PageLayoutWithHeader
