@@ -1,0 +1,49 @@
+@import 'src/styles/utils';
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: transparent;
+  padding: 12px 0px;
+
+  border-top: 1px solid $color-gray01-30;
+
+  &:last-of-type {
+    border-bottom: 1px solid $color-gray01-30;
+  }
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  color: $color-gray04 !important;
+  text-decoration: underline !important;
+
+  &:hover {
+    transition: color 0.3s;
+    color: $color-gray03 !important;
+  }
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 400;
+  color: $color-gray02;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-gray03;
+  text-decoration: underline;
+
+  &:hover {
+    transition: color 0.3s;
+    color: $color-gray02;
+  }
+}
