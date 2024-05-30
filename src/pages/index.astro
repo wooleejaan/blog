@@ -12,19 +12,19 @@ const subpath = pathname.match(/[^\/]+/g)
 const baseHref = '/'
 const isHome = baseHref === pathname || baseHref === '/' + subpath?.[0]
 
-const posts = (await getCollection('post')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-)
+// const posts = (await getCollection('post')).sort(
+//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+// )
 
 const notes = (await getCollection('note')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 
-const collections = (await getCollection('collection')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-)
+// const collections = (await getCollection('collection')).sort(
+//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+// )
 
-if (!posts || !notes || !collections) {
+if (!notes) {
   return Astro.redirect('/404')
 }
 ---
@@ -38,7 +38,7 @@ if (!posts || !notes || !collections) {
     <PageLayoutWithHeader title="yongwoo" client:idle isHomePage={isHome}>
       <PageSection disableTitleMarginBottom>
         <HomeHero />
-        <BlogList items={posts} title="posts" pathName="post" />
+        <!-- <BlogList items={posts} title="posts" pathName="post" /> -->
         <BlogList items={notes} title="scribbled notes" pathName="note" />
         <!-- <BlogList
           items={collections}
