@@ -17,7 +17,7 @@ In Astro, an island refers to an interactive UI component.
 #### Benefits of Islands
 
 - `Performance`: The majority of your website is converted to fast, static HTML, and JavaScript is only loaded when necessary. Since JavaScript is one of the slowest assets to load per byte, every byte matters.
-- `Parallel Loading`: Prioritizing what users see is crucial. Astro excels in this area, allowing you to easily configure when each component should be rendered, using [client directives](https://docs.astro.build/en/reference/directives-reference/#client-directives).
+- `Parallel Loading`: Prioritizing what users see is crucial. Astro excels in this area, allowing you to easily configure when each component should be rendered, using <a href="https://docs.astro.build/en/reference/directives-reference/#client-directives" target="_blank">client directives</a>
 
 #### References
 
