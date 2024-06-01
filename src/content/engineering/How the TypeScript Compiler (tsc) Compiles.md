@@ -4,7 +4,7 @@ description: 'The TypeScript compilation process'
 pubDate: 'Apr 21 2024'
 ---
 
-#### Converting TypeScript Files to JavaScript Files
+##### Converting TypeScript Files to JavaScript Files
 
 The TypeScript compiler (tsc) begins by reading the tsconfig.json file to determine the project's compile options and the list of files to be included in the compilation (configured through exclude, include, files, etc.).
 
@@ -23,7 +23,7 @@ In the Type Checking stage, tsc's [checker](https://github.com/microsoft/TypeScr
 
 In the Emitting stage, tsc's [emitter](https://github.com/microsoft/TypeScript/blob/main/src/compiler/emitter.ts) generates the final JavaScript code based on the AST. The .ts files are converted to .js files according to the JavaScript version specified in tsconfig.json.
 
-#### References
+##### References
 
 <a href="https://www.youtube.com/watch?v=X8k_4tZ16qU" target="_blank">How the TypeScript Compiler Compiles - understanding the compiler internal</a><br>
 <a href="https://github.com/microsoft/TypeScript-Compiler-Notes" target="_blank">[Github] microsoft/TypeScript-Compiler-Notes</a><br>

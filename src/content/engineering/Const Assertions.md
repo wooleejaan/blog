@@ -5,7 +5,7 @@ pubDate: 'Apr 20 2024'
 updatedDate: 'Apr 28 2024'
 ---
 
-#### How to Safely Use Values and Reduce Unnecessary Type Creation
+##### How to Safely Use Values and Reduce Unnecessary Type Creation
 
 "Const assertions" are a special type of notation in TypeScript.
 
@@ -68,6 +68,6 @@ interface Red extends ColorInterface {
 }
 ```
 
-#### References
+##### References
 
 <a href="https://www.omarileon.me/blog/typescript-as-const" target="_blank">Understanding ”As Const” in TypeScript</a>

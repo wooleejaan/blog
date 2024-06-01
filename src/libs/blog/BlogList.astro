@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content'
 import BlogListWithMutation from './BlogListWithMutation/BlogListWithMutation'
 
 type Props = {
-  items: CollectionEntry<'note'>[]
+  items: CollectionEntry<'engineering' | 'note' | 'collection'>[]
   title: string
   pathName: string
   disableClick?: boolean

@@ -4,7 +4,7 @@ description: 'How the Browser Works'
 pubDate: 'May 12 2024'
 ---
 
-#### Browser Processes and Threads
+##### Browser Processes and Threads
 
 Browsers operate through processes and threads, much like how applications run programs and execute tasks. Each Chrome browser window spawns its own browser process (or browser engine). Within that process, each tab runs in its own renderer process (or rendering engine).
 
@@ -13,7 +13,7 @@ The JavaScript engine is embedded within each renderer process.
 
 To illustrate with an example, when you type something into the address bar, the browser process evaluates it first. If it's a search query, it passes it to the search engine; if it's a URL, it uses the network thread within the browser process to request the resource. Once deemed safe, the browser process hands off the data to the renderer process for that tab to render the web page (known as the rendering process or Rendering Critical Path).
 
-#### How the Browser Event Loop Operates
+##### How the Browser Event Loop Operates
 
 When the browser process identifies the user input as a URL, it requests the corresponding IP address from the DNS server via the network thread. It checks the cached DNS records first; if not found, it requests the IP address from the DNS server, a process known as Recursive Query. This recursive search continues until the IP address for the domain is found.
 
@@ -44,7 +44,7 @@ The event loop in JavaScript runtime includes:
 - Microtask Queue (or Job Queue): Stores asynchronous callbacks from Promises, async/await, process.nextTick, object.observe, MutationObserver, and ensures quick processing at the end of each cycle.
 - Animation Frames (or Render Queue): Holds requestAnimationFrame callbacks for rendering tasks.
 
-#### References
+##### References
 
 <a href="https://serhiikoziy.medium.com/event-loop-in-chrome-browser-72bd6c8db033" target="_blank">Event Loop in Chrome browser</a><br>
 <a href="https://blog.xnim.me/event-loop-and-render-queue" target="_blank">Browser Event loop: micro and macro tasks, call stack, render queue: layout, paint, composite</a><br>

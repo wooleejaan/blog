@@ -16,11 +16,15 @@ const notes = (await getCollection('note')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 
-// const collections = (await getCollection('collection')).sort(
-//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-// )
+const engineerings = (await getCollection('engineering')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+)
 
-if (!notes) {
+const collections = (await getCollection('collection')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+)
+
+if (!engineerings || !notes || !collections) {
   return Astro.redirect('/404')
 }
 ---
@@ -34,12 +38,17 @@ if (!notes) {
     <PageLayoutWithHeader title="yongwoo" client:idle isHomePage={isHome}>
       <PageSection disableTitleMarginBottom>
         <HomeHero />
-        <BlogList items={notes} title="scribbles" pathName="note" />
-        <!-- <BlogList
+        <BlogList items={notes} title="note" pathName="note" />
+        <BlogList
+          items={engineerings}
+          title="engineering"
+          pathName="engineering"
+        />
+        <BlogList
           items={collections}
-          title="collections"
+          title="collection"
           pathName="collection"
-        /> -->
+        />
       </PageSection>
     </PageLayoutWithHeader>
   </body>

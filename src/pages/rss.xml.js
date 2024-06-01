@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 
 export async function GET(context) {
-  const posts = await getCollection('post')
+  const posts = await getCollection('engineering')
   const notes = await getCollection('note')
   const collections = await getCollection('collection')
 

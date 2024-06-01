@@ -4,7 +4,7 @@ description: 'Understanding why using interfaces is more compiler-friendly than 
 pubDate: 'May 05 2024'
 ---
 
-#### Writing Code That's Easy to Compile
+##### Writing Code That's Easy to Compile
 
 ```ts
 import React from 'react'
@@ -35,11 +35,11 @@ There are additional practices for writing compiler-friendly code:
 - **Type Annotations**: Adding type annotations can significantly reduce the work the compiler has to do in type inference.
 - **Base Types for Unions**: Using base types for union types can improve performance.
 
-#### When Not to Optimize for Compiler Ease
+##### When Not to Optimize for Compiler Ease
 
 While intersections can be less compiler-friendly, they are effective for precisely describing complex type relationships. When you need to express intricate type combinations accurately, intersections are a powerful tool.
 
-#### References
+##### References
 
 <a href="https://github.com/microsoft/TypeScript/wiki/Performance" target="_blank">TypeScript Performance Wiki</a><br>
 <a href="https://johnaaronnelson.com/prefer-type/" target="_blank">Prefer type over interface</a><br>

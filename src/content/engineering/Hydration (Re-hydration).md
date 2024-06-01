@@ -9,7 +9,7 @@ Hydration (or re-hydration) is the process of attaching JavaScript event handler
 
 Hydration directly affects the time it takes for the page to become interactive after the initial render, significantly impacting the user experience. Therefore, improving hydration performance can speed up the delivery of initial content and the time to interactive (TTI).
 
-#### Various Technical Approaches to Improve Hydration Performance
+##### Various Technical Approaches to Improve Hydration Performance
 
 To swiftly deliver web pages to users, several technical strategies (or ideas) can be employed:
 
@@ -22,7 +22,7 @@ To swiftly deliver web pages to users, several technical strategies (or ideas) c
 
 - **Trisomorphic Rendering**: Using a Service Worker to share templates or routing code between the server, client, and Service Worker, implementing Streaming Server-Side Rendering within the Service Worker.
 
-#### References
+##### References
 
 <a href="https://www.patterns.dev/react/progressive-hydration" target="_blank">Progressive Hydration</a><br>
 <a href="https://web.dev/articles/tti" target="_blank">Time to Interactive (TTI)</a><br>

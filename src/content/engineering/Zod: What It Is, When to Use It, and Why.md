@@ -6,7 +6,7 @@ pubDate: 'May 05 2024'
 
 Zod is a powerful data validation and type inference library for TypeScript environments.
 
-#### Trust: Enhancing Input Reliability with Zod
+##### Trust: Enhancing Input Reliability with Zod
 
 In JavaScript applications, you deal with various inputs and outputs, which inherently involve a sort of contract. However, JavaScript lacks built-in enforcement of these contracts.
 
@@ -38,7 +38,7 @@ const redColor: IColor = {
 console.log(colorSchema.parse(redColor))
 ```
 
-#### Control: Robust Error Handling with Zod
+##### Control: Robust Error Handling with Zod
 
 Zod shines in its ability to detect and handle errors when data doesn't conform to the schema. It goes beyond simple error throwing, offering customizable error messages and additional handling mechanisms.
 
@@ -92,7 +92,7 @@ async function getData() {
 }
 ```
 
-#### References
+##### References
 
 <a href="https://dev.to/jareechang/zod-the-next-biggest-thing-after-typescript-4phh" target="_blank">Zod: The Next Biggest thing after Typescript</a><br>
 <a href="https://www.totaltypescript.com/when-should-you-use-zod" target="_blank">When should you use Zod?</a><br>
