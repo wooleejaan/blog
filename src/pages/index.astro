@@ -16,11 +16,15 @@ const engineerings = (await getCollection('engineering')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 
-const collections = (await getCollection('collection')).sort(
+const notes = (await getCollection('note')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 
-if (!engineerings || !collections) {
+// const collections = (await getCollection('collection')).sort(
+//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+// )
+
+if (!engineerings || !notes) {
   return Astro.redirect('/404')
 }
 ---
@@ -36,14 +40,15 @@ if (!engineerings || !collections) {
         <HomeHero />
         <BlogList
           items={engineerings}
-          title="Engineering Scribbles"
+          title="Engineering"
           pathName="engineering"
         />
-        <BlogList
+        <BlogList items={notes} title="Untitled" pathName="note" />
+        <!-- <BlogList
           items={collections}
           title="Collections"
           pathName="collection"
-        />
+        /> -->
       </PageSection>
     </PageLayoutWithHeader>
   </body>
