@@ -40,7 +40,7 @@ const { title, description, pubDate, updatedDate } = post.data
       <PageSection title={title} disableTitleMarginBottom>
         <BlogDetailHeaderSection
           pubDate={pubDate}
-          updatedDate={updatedDate ?? new Date()}
+          updatedDate={updatedDate}
           minutesRead={remarkPluginFrontmatter.minutesRead}
         />
         <Content />
