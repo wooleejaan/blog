@@ -20,10 +20,6 @@ const notes = (await getCollection('note')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 
-// const collections = (await getCollection('collection')).sort(
-//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-// )
-
 if (!engineerings || !notes) {
   return Astro.redirect('/404')
 }
@@ -40,15 +36,10 @@ if (!engineerings || !notes) {
         <HomeHero />
         <BlogList
           items={engineerings}
-          title="Engineering"
+          title="Engineering Notes"
           pathName="engineering"
         />
-        <BlogList items={notes} title="." pathName="note" />
-        <!-- <BlogList
-          items={collections}
-          title="Collections"
-          pathName="collection"
-        /> -->
+        <BlogList items={notes} title="Scribbles" pathName="note" />
       </PageSection>
     </PageLayoutWithHeader>
   </body>

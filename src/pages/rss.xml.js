@@ -3,20 +3,20 @@ import { getCollection } from 'astro:content'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 
 export async function GET(context) {
-  const posts = await getCollection('engineering')
-  const collections = await getCollection('collection')
+  const engineeringNotes = await getCollection('engineering')
+  const scribbles = await getCollection('note')
 
   const getItems = () => {
-    const postItems = posts.map((post) => ({
+    const engineeringNoteItems = engineeringNotes.map((post) => ({
       ...post.data,
-      link: `/post/${post.slug}/`,
+      link: `/engineering/${post.slug}/`,
     }))
-    const collectionItems = collections.map((post) => ({
+    const scribbleItems = scribbles.map((post) => ({
       ...post.data,
-      link: `/collection/${post.slug}/`,
+      link: `/note/${post.slug}/`,
     }))
 
-    return [...postItems, ...collectionItems]
+    return [...engineeringNoteItems, ...scribbleItems]
   }
 
   return rss({
