@@ -1,7 +1,7 @@
 ---
 title: 'Understanding the Event Loop in Chrome Web Browser'
 description: 'How the Browser Works'
-pubDate: 'May 12 2024'
+pubDate: 'Jun 09 2024'
 ---
 
 ##### Browser Processes and Threads
