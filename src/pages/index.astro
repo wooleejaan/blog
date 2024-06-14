@@ -12,15 +12,11 @@ const subpath = pathname.match(/[^\/]+/g)
 const baseHref = '/'
 const isHome = baseHref === pathname || baseHref === '/' + subpath?.[0]
 
-const engineerings = (await getCollection('engineering')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-)
-
 const notes = (await getCollection('note')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 
-if (!engineerings || !notes) {
+if (!notes) {
   return Astro.redirect('/404')
 }
 ---
@@ -34,11 +30,6 @@ if (!engineerings || !notes) {
     <PageLayoutWithHeader title="yongwoo" client:idle isHomePage={isHome}>
       <PageSection disableTitleMarginBottom>
         <HomeHero />
-        <BlogList
-          items={engineerings}
-          title="Engineering Notes"
-          pathName="engineering"
-        />
         <BlogList items={notes} title="Scribbles" pathName="note" />
       </PageSection>
     </PageLayoutWithHeader>
