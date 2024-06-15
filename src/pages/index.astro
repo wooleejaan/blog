@@ -6,6 +6,7 @@ import PageSection from '../libs/shared/components/PageSection/PageSection'
 import { getCollection } from 'astro:content'
 import BlogList from '../libs/blog/BlogList.astro'
 import HomeHero from '../libs/home/HomeHero.astro'
+import HomeIconSection from '../libs/home/HomeIconSection.astro'
 
 const { pathname } = Astro.url
 const subpath = pathname.match(/[^\/]+/g)
@@ -30,6 +31,7 @@ if (!notes) {
     <PageLayoutWithHeader title="yongwoo" client:idle isHomePage={isHome}>
       <PageSection disableTitleMarginBottom>
         <HomeHero />
+        <HomeIconSection />
         <BlogList items={notes} title="Scribbles" pathName="note" />
       </PageSection>
     </PageLayoutWithHeader>
