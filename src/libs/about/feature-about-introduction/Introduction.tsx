@@ -37,7 +37,7 @@ const Introduction = () => {
       title: 'Yonsei University, Bachelor of Science',
       descriptions: [
         'Mar 2016 - Aug 2022 (6 years, 5 months)',
-        'Majored in Human Environment & Design (Combined Major: Culture and Criticism Studies).',
+        'Majored in Integrated Design (Previously Human Environment & Design), Combined Major: Culture and Criticism Studies.',
         'Studied UX Design, Product Design, and Qualitative/Quantitative UX Research.',
       ],
     },
