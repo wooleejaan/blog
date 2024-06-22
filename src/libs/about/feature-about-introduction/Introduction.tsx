@@ -4,86 +4,119 @@ import styles from './Introduction.module.scss'
 const cx = classNames.bind(styles)
 
 const Introduction = () => {
-  const experiences = (): { title: string; descriptions: string[] }[] => [
-    {
-      title: 'Software Engineer, Web Front End',
-      descriptions: [
-        'Nov 2023 - Present',
-        'Currently engaged in developing Prix, a product by Lattice, experiencing the growth of both the product and organization in an early-stage startup environment. Joined during the seed stage and am now in the pre-Series A stage.',
-      ],
-    },
-    {
-      title: 'Intern, UX Researcher - Qualitative',
-      descriptions: [
-        'May 2022 - Jul 2022 (3 months)',
-        'Digital Media Lab, Yonsei University',
-        'Conducted user interviews with focus groups based on FGI (Focus Group Interview) and FGD (Focus Group Discussion) methodologies to evaluate the UX design of AI application.',
-      ],
-    },
-  ]
-
-  const educations = (): { title: string; descriptions: string[] }[] => [
-    {
-      title: 'Codeit Front-End Sprint Program (Inaugural Class)',
-      descriptions: [
-        'Mar 2023 - Sep 2023 (7 months)',
-        'Expertise in React ecosystem: TypeScript, NextJS, state management.',
-        'Proficient in scalable architectures and monorepo approach.',
-        'Skilled in front-end testing, CI/CD pipelines, and deployment.',
-        'Versed in collaborative workflows: branching strategies, code reviews.',
-      ],
-    },
-    {
-      title: 'Yonsei University, Bachelor of Science',
-      descriptions: [
-        'Mar 2016 - Aug 2022 (6 years, 5 months)',
-        'Majored in Integrated Design (Previously Human Environment & Design), Combined Major: Culture and Criticism Studies.',
-        'Studied UX Design, Product Design, and Qualitative/Quantitative UX Research.',
-      ],
-    },
-  ]
-
   return (
     <div className={cx('container')}>
       <div className={cx('section')}>
         <p className={cx('heroText')}>
           <span>
-            I find joy in logically approaching complex problems and simplifying
-            them. I have a passion for smooth motion interfaces and clean,
-            refined graphic work. I am a quick learner and can rapidly acquire
-            knowledge in any field. I am deeply interested in creating
-            attractive and user-friendly products.
+            I excel at breaking down complex problems and building robust
+            solutions from scratch. As a software engineer, I thrive on the
+            challenge of laying solid foundations for products, tackling each
+            step with logical precision and a focus on long-term scalability.
           </span>
         </p>
       </div>
       <div className={cx('section')}>
         <h3 className={cx('sectionTitle')}>Experience</h3>
         <div className={cx('items')}>
-          {experiences().map(({ title, descriptions }) => (
-            <div className={cx('item')} key={title}>
-              <div className={cx('itemTitle')}>{title}</div>
-              <div className={cx('descriptions')}>
-                {descriptions.map((description, index) => (
-                  <li key={index.toString()}>- {description}</li>
-                ))}
-              </div>
+          <div className={cx('item')}>
+            <div className={cx('itemTitle')}>
+              Software Engineer, Web Front End
             </div>
-          ))}
+            <div className={cx('description')}>
+              <li>
+                <a href="https://www.prix.im/" target="_blank">
+                  Prix
+                </a>{' '}
+                by{' '}
+                <a href="https://www.lattice.im/" target="_blank">
+                  Lattice
+                </a>{' '}
+                | November 2023 - Present
+              </li>
+              <li>
+                - Currently engaged in developing Prix, a product by Lattice
+              </li>
+              <li>
+                - Experiencing the growth of both the product and organization
+                in an early-stage startup environment
+              </li>
+              <li>
+                - Joined during the seed stage and am now in the pre-Series A
+                stage
+              </li>
+            </div>
+          </div>
+          <div className={cx('item')}>
+            <div className={cx('itemTitle')}>
+              UX Researcher Intern (Qualitative)
+            </div>
+            <div className={cx('description')}>
+              <li>
+                <a
+                  href="https://sites.google.com/view/yonseidmlab"
+                  target="_blank"
+                >
+                  Digital Media Lab
+                </a>
+                , Yonsei University | May 2022 - July 2022
+              </li>
+              <li>
+                - Conducted user interviews with focus groups based on FGI
+                (Focus Group Interview) and FGD (Focus Group Discussion)
+                methodologies
+              </li>
+              <li>- Evaluated the UX design of AI applications</li>
+            </div>
+          </div>
         </div>
       </div>
       <div className={cx('section')}>
         <h3 className={cx('sectionTitle')}>Education</h3>
         <div className={cx('items')}>
-          {educations().map(({ title, descriptions }) => (
-            <div className={cx('item')} key={title}>
-              <div className={cx('itemTitle')}>{title}</div>
-              <div className={cx('descriptions')}>
-                {descriptions.map((description, index) => (
-                  <li key={index.toString()}>- {description}</li>
-                ))}
-              </div>
+          <div className={cx('item')}>
+            <div className={cx('itemTitle')}>
+              Codeit Front-End Sprint Program (Pilot Cohort)
             </div>
-          ))}
+            <div className={cx('description')}>
+              <li>
+                <a href="https://www.codeit.kr/" target="_blank">
+                  Codeit
+                </a>{' '}
+                | March 2023 - September 2023
+              </li>
+              <li>
+                - Completed an intensive 6-month front-end development bootcamp
+              </li>
+              <li>
+                - Gained expertise in React ecosystem: TypeScript, NextJS, state
+                management
+              </li>
+              <li>- Learned scalable architectures and monorepo approaches</li>
+              <li>
+                - Practiced front-end testing, CI/CD pipelines, and deployment
+              </li>
+              <li>
+                - Experienced collaborative workflows: branching strategies,
+                code reviews
+              </li>
+            </div>
+          </div>
+          <div className={cx('item')}>
+            <div className={cx('itemTitle')}>Yonsei University</div>
+            <div className={cx('description')}>
+              <li>Bachelor of Science | March 2016 - August 2022</li>
+              <li>
+                - Major: Integrated Design (Previously Human Environment &
+                Design)
+              </li>
+              <li>- Combined Major: Culture and Criticism Studies</li>
+              <li>
+                - Studied UX Design, Product Design, and
+                Qualitative/Quantitative UX Research
+              </li>
+            </div>
+          </div>
         </div>
       </div>
     </div>

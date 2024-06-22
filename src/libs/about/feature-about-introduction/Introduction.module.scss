@@ -34,10 +34,11 @@
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 12px;
+        text-decoration: underline;
       }
 
-      .descriptions {
-        color: $color-gray04;
+      .description {
+        color: $color-gray03 !important;
         font-size: 14px;
         font-weight: 400px;
         display: flex;
@@ -55,7 +56,7 @@
 }
 
 .heroText {
-  color: $color-gray04;
+  color: $color-gray03;
   display: flex;
   flex-direction: column;
   gap: 12px;
