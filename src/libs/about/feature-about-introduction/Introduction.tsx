@@ -9,11 +9,23 @@ const Introduction = () => {
       <div className={cx('section')}>
         <p className={cx('heroText')}>
           <span>
-            He believes a good product understands users, even when they make
-            errors. His key idea is that users are never wrong. He creates
-            easy-to-use designs that get what users want to do. His products fit
-            people's needs, not the other way around. He loves minimalism and
-            enjoys building things from the ground up.
+            He believes a good product understands the user, even when they make
+            mistakes. His key principle as a maker is crafting software that
+            enables the user to achieve their goals effortlessly, no matter
+            what. He designs intuitive interfaces where user interactions feel
+            as natural as flowing water. His aim is to craft product that
+            seamlessly adapts to the user's needs, rather than forcing the user
+            to adapt to the product. Passionate about minimalism, he enjoys
+            crafting elegant software solutions from scratch that provide a
+            smooth, frictionless user experience. <br />
+            <br />
+            He also strongly believes in the power of ongoing improvement.
+            Instead of aiming for immediate perfection, he focuses on steady
+            refinement. His method is to create, improve, and create again.
+            Through consistent work and many iterations, he allows his software
+            to grow and improve naturally. This process of continuous creation
+            and careful adjustment is what he believes leads to truly effective
+            and user-friendly product.
           </span>
         </p>
       </div>
