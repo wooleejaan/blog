@@ -107,8 +107,14 @@ const Introduction = () => {
             <div className={cx('description')}>
               <li>Bachelor of Science | March 2016 - August 2022</li>
               <li>
-                - Major: Integrated Design (Previously Human Environment &
-                Design)
+                - Major:{' '}
+                <a
+                  href="https://rus.yonsei.ac.kr/che_en/design/design_intro.do"
+                  target="_blank"
+                >
+                  Integrated Design
+                </a>{' '}
+                (Previously Human Environment & Design)
               </li>
               <li>- Combined Major: Culture and Criticism Studies</li>
               <li>
