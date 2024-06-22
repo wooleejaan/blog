@@ -9,10 +9,11 @@ const Introduction = () => {
       <div className={cx('section')}>
         <p className={cx('heroText')}>
           <span>
-            I excel at breaking down complex problems and building robust
-            solutions from scratch. As a software engineer, I thrive on the
-            challenge of laying solid foundations for products, tackling each
-            step with logical precision and a focus on long-term scalability.
+            He believes a good product understands users, even when they make
+            errors. His key idea is that users are never wrong. He creates
+            easy-to-use designs that get what users want to do. His products fit
+            people's needs, not the other way around. He loves minimalism and
+            enjoys building things from the ground up.
           </span>
         </p>
       </div>
