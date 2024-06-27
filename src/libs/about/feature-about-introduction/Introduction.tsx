@@ -9,23 +9,14 @@ const Introduction = () => {
       <div className={cx('section')}>
         <p className={cx('heroText')}>
           <span>
-            He believes a good product understands the user, even when they make
-            mistakes. His key principle as a maker is crafting software that
-            enables the user to achieve their goals effortlessly, no matter
-            what. He designs intuitive interfaces where user interactions feel
-            as natural as flowing water. His aim is to craft product that
-            seamlessly adapts to the user's needs, rather than forcing the user
-            to adapt to the product. Passionate about minimalism, he enjoys
-            crafting elegant software solutions from scratch that provide a
-            smooth, frictionless user experience. <br />
-            <br />
-            He also strongly believes in the power of ongoing improvement.
-            Instead of aiming for immediate perfection, he focuses on steady
-            refinement. His method is to create, improve, and create again.
-            Through consistent work and many iterations, he allows his software
-            to grow and improve naturally. This process of continuous creation
-            and careful adjustment is what he believes leads to truly effective
-            and user-friendly product.
+            He makes products with clear purpose. His way is simple: build,
+            improve, repeat. He turns complex problems into easy solutions,
+            aiming for products that users find easy to use. He doesn't chase
+            trends or look for praise. He works hard, constantly improving his
+            creations. This dedication shapes his unique approach to product
+            making. He keeps only what's necessary in his designs. For him,
+            success comes from working hard and keeping things simple, always
+            with the users in mind.
           </span>
         </p>
       </div>
