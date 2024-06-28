@@ -13,11 +13,11 @@ const subpath = pathname.match(/[^\/]+/g)
 const baseHref = '/'
 const isHome = baseHref === pathname || baseHref === '/' + subpath?.[0]
 
-const notes = (await getCollection('note')).sort(
+const archives = (await getCollection('archives')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 
-if (!notes) {
+if (!archives) {
   return Astro.redirect('/404')
 }
 ---
@@ -32,7 +32,7 @@ if (!notes) {
       <PageSection disableTitleMarginBottom>
         <HomeHero />
         <HomeIconSection />
-        <BlogList items={notes} title="notes" pathName="note" />
+        <BlogList items={archives} title="archives" pathName="archives" />
       </PageSection>
     </PageLayoutWithHeader>
   </body>

@@ -7,13 +7,13 @@ import BackButton from '../../libs/blog/BackButton.astro'
 import BlogDetailHeaderSection from '../../libs/blog/BlogDetailHeaderSection.astro'
 
 export async function getStaticPaths() {
-  const notes = await getCollection('note')
+  const notes = await getCollection('archives')
   return notes.map((post) => ({
     params: { slug: post.slug },
     props: post,
   }))
 }
-type Props = CollectionEntry<'note'>
+type Props = CollectionEntry<'archives'>
 
 const post = Astro.props
 
