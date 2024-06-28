@@ -10,18 +10,17 @@ const Introduction = () => {
         <p className={cx('heroText')}>
           <span>
             He believes that great products solve real problems that users can't
-            easily explain. He wants to make products that are sharp and
+            easily explain. He aims to make products that are sharp and
             sensitive, focusing on fine details while making complex issues
-            simple to solve. He aims to create products with a clear purpose and
-            strong beliefs. To do this, he thinks it's important to ask
-            questions instead of just listening. He's not afraid to challenge
-            ideas. His approach involves making something, improving it, and
-            then repeating the process He believes that success comes from
-            working hard and keeping things simple. He wants to make products
-            that people really need, not just like. This means he has to
-            understand users deeply, work very carefully, and always think about
-            what users need. He believes that the best products don't have
-            extra, unnecessary parts.
+            simple to solve. Creating products with a clear purpose and strong
+            beliefs, he thinks it's important to ask questions instead of just
+            listening. Not afraid to challenge ideas, his approach involves
+            making something, improving it, and then repeating the process. He
+            believes that success comes from working hard and keeping things
+            simple. Striving to make products that people really need, not just
+            like, he understands users deeply, works very carefully, and always
+            thinks about what users need. He believes that the best products
+            don't have extra, unnecessary parts.
           </span>
         </p>
       </div>
