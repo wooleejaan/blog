@@ -9,14 +9,19 @@ const Introduction = () => {
       <div className={cx('section')}>
         <p className={cx('heroText')}>
           <span>
-            He makes products with clear purpose. His way is simple: build,
-            improve, repeat. He turns complex problems into easy solutions,
-            aiming for products that users find easy to use. He doesn't chase
-            trends or look for praise. He works hard, constantly improving his
-            creations. This dedication shapes his unique approach to product
-            making. He keeps only what's necessary in his designs. For him,
-            success comes from working hard and keeping things simple, always
-            with the users in mind.
+            He believes that great products solve real problems that users can't
+            easily explain. He wants to make products that are sharp and
+            sensitive, focusing on fine details while making complex issues
+            simple to solve. He aims to create products with a clear purpose and
+            strong beliefs. To do this, he thinks it's important to ask
+            questions instead of just listening. He's not afraid to challenge
+            ideas. His approach involves making something, improving it, and
+            then repeating the process He believes that success comes from
+            working hard and keeping things simple. He wants to make products
+            that people really need, not just like. This means he has to
+            understand users deeply, work very carefully, and always think about
+            what users need. He believes that the best products don't have
+            extra, unnecessary parts.
           </span>
         </p>
       </div>
