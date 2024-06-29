@@ -1,7 +1,7 @@
 ---
 title: 'Cypher'
 description: ''
-pubDate: 'Feb 1 2024'
+pubDate: 'Feb 4 2024'
 ---
 
 매트릭스 1에 등장하는 배신자 사이퍼.<br>
