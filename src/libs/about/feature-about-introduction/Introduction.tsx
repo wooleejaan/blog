@@ -33,17 +33,17 @@ const Introduction = () => {
             </div>
             <div className={cx('description')}>
               <li>
-                <a href="https://www.prix.im/" target="_blank">
-                  Prix
-                </a>{' '}
-                by{' '}
                 <a href="https://www.lattice.im/" target="_blank">
                   Lattice
                 </a>{' '}
                 | November 2023 - Present
               </li>
               <li>
-                - Currently engaged in developing Prix, a product by Lattice
+                - Currently engaged in developing{' '}
+                <a href="https://www.prix.im/" target="_blank">
+                  Prix
+                </a>
+                , a product by Lattice
               </li>
               <li>
                 - Experiencing the growth of both the product and organization
