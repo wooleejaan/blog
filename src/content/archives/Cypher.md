@@ -13,7 +13,9 @@ pubDate: 'Feb 1 2024'
 
 <img src="/images/cypher/2.avif" width="500px" height="300px" title="cypher 2"/>
 
-I know this steak dosen't exist. I know that when I put it in my mouth. the Matrix is telling my brain that it is juicy and delicious. After nine years, you know what I realize? Ignorance is bliss. I don't want to remember nothing.
+I know this steak dosen't exist. I know that when I put it in my mouth. the Matrix is telling my brain that it is juicy and delicious. After nine years, you know what I realize? Ignorance is bliss. I don't want to remember nothing.<br>
+···
 
 If I had to choose between that and the Matrix, I choose the Matrix.
-The Matrix isn't real. I think the Matrix can be more real than this world.
+The Matrix isn't real. I think the Matrix can be more real than this world.<br>
+···
