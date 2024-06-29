@@ -16,19 +16,21 @@ Good Morning, Happy Pills가 제일 좋음.<br>
 
 4집은 불안정한 파격이었고, 5집은 파격 이후 안정을 찾는 과정이어서 좋음.
 
-> **Norah jones - Good morning**<br>
-> Good morning<br>
-> My thoughts on leaving<br>
-> Are back on the table<br>
-> I thought you should know<br>
-> And maybe powerful actions<br>
-> Or powerful feelings<br>
-> Will keep me from going<br>
-> ···
+---
 
-> **Norah jones - Happy Pills**<br>
-> Tryin' to pick up the pace<br>
-> Tryin' to make it so I never see your face again<br>
-> Time to throw this away<br>
-> Wanna to make sure that you never waste my time again<br>
-> ···
+**Norah jones - Good morning**<br>
+Good morning<br>
+My thoughts on leaving<br>
+Are back on the table<br>
+I thought you should know<br>
+And maybe powerful actions<br>
+Or powerful feelings<br>
+Will keep me from going<br>
+···
+
+**Norah jones - Happy Pills**<br>
+Tryin' to pick up the pace<br>
+Tryin' to make it so I never see your face again<br>
+Time to throw this away<br>
+Wanna to make sure that you never waste my time again<br>
+···
