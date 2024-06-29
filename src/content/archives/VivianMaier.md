@@ -1,7 +1,7 @@
 ---
 title: 'Vivian Maier'
 description: ''
-pubDate: 'Jun 28 2024'
+pubDate: 'Jan 7 2024'
 ---
 
 Vivian Dorothea Maier(1926-2009).
