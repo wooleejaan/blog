@@ -120,9 +120,9 @@ const Introduction = () => {
                   href="https://rus.yonsei.ac.kr/che_en/design/design_intro.do"
                   target="_blank"
                 >
-                  Integrated Design
+                  Human Environment & Design
                 </a>{' '}
-                (Previously Human Environment & Design)
+                (The department has since been renamed to Integrated Design)
               </li>
               <li>- Combined Major: Culture and Criticism Studies</li>
               <li>
