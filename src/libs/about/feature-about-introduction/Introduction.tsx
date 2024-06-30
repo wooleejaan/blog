@@ -111,7 +111,9 @@ const Introduction = () => {
             </div>
           </div>
           <div className={cx('item')}>
-            <div className={cx('itemTitle')}>Yonsei University</div>
+            <div className={cx('itemTitle')}>
+              Yonsei University, Seoul, Korea
+            </div>
             <div className={cx('description')}>
               <li>Bachelor of Science | March 2016 - August 2022</li>
               <li>
