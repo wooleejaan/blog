@@ -9,9 +9,9 @@ const Introduction = () => {
       <div className={cx('section')}>
         <p className={cx('heroText')}>
           <span>
-            He believes that great products solve real problems that users can't
-            easily explain. He aims to make products that are sharp and
-            sensitive, focusing on fine details while making complex issues
+            Yongwoo Lee believes that great products solve real problems that
+            users can't easily explain. He aims to make products that are sharp
+            and sensitive, focusing on fine details while making complex issues
             simple to solve. Creating products with a clear purpose and strong
             beliefs, he thinks it's important to ask questions instead of just
             listening. Not afraid to challenge ideas, his approach involves
