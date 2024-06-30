@@ -16,11 +16,11 @@ const {} = Astro.props
     <img class="image" src="/icon/linkedin.svg" alt="linkedin" />
   </a>
   <a
-    class="item"
+    class="bigItem"
     target="_blank"
     href="https://github.com/wooleejaan/dev-notes"
   >
-    <img class="image" src="/icon/notes.svg" alt="notes" />
+    <img class="bigImage" src="/icon/stackoverflow.svg" alt="dev" />
   </a>
 </div>
 <style lang="scss">
@@ -43,8 +43,21 @@ const {} = Astro.props
     align-items: center;
   }
 
+  .bigItem {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .image {
     width: 16px;
     height: 16px;
+  }
+
+  .bigImage {
+    width: 20px;
+    height: 20px;
   }
 </style>
