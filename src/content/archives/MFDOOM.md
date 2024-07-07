@@ -6,8 +6,7 @@ pubDate: 'Jul 4 2024'
 
 <img src="/images/MF_DOOM/2.jpeg" title="MF DOOM 2"/><br>
 
-    구멍 난 양말보다 더 많은 영혼을 가진 빌런.<br>
-
+구멍 난 양말보다 더 많은 영혼을 가진 빌런.<br>
 에미넴을 위시해 힙합 음악의 상업적 성공의 그림자 속 존재.<br>
 rhyme이나 word play 같은 랩의 근본에 대한 집착. 언더그라운드, 클래식, 인디펜던트가 어울린다.
 
