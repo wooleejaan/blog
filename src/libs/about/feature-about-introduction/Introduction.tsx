@@ -15,8 +15,10 @@ const Introduction = () => {
             simple to solve. Creating products with a clear purpose and strong
             beliefs, he thinks it's important to ask questions instead of just
             listening. Not afraid to challenge ideas, his approach involves
-            making something, improving it, and then repeating the process. He
-            believes that success comes from working hard and keeping things
+            making something, improving it, and then repeating the process.
+          </span>
+          <span>
+            Lee believes that success comes from working hard and keeping things
             simple. Striving to make products that people really need, not just
             like, he understands users deeply, works very carefully, and always
             thinks about what users need. He believes that the best products
@@ -70,11 +72,12 @@ const Introduction = () => {
                 , Yonsei University | May 2022 - July 2022
               </li>
               <li>
-                - Conducted user interviews with focus groups based on FGI
-                (Focus Group Interview) and FGD (Focus Group Discussion)
-                methodologies
+                - Conducted user interviews using FGI and FGD methodologies
               </li>
-              <li>- Evaluated the UX design of AI applications</li>
+              <li>
+                - Evaluated the UX design of AI applications, providing insights
+                for improvement
+              </li>
             </div>
           </div>
         </div>
@@ -84,21 +87,47 @@ const Introduction = () => {
         <div className={cx('items')}>
           <div className={cx('item')}>
             <div className={cx('itemTitle')}>
-              Codeit Front-End Sprint Program (Pilot Cohort)
+              Yonsei University, Seoul, Korea
             </div>
+            <div className={cx('description')}>
+              <li>
+                Bachelor of Science in Human Environment & Design (now{' '}
+                <a
+                  href="https://rus.yonsei.ac.kr/che_en/design/design_intro.do"
+                  target="_blank"
+                >
+                  Integrated Design
+                </a>
+                ) | March 2016 - August 2022
+              </li>
+              <li>- Combined Major: Culture and Criticism Studies</li>
+              <li>
+                - Relevant coursework: UX Design, Product Design,
+                Qualitative/Quantitative UX Research
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={cx('section')}>
+        <h3 className={cx('sectionTitle')}>Professional Development</h3>
+        <div className={cx('items')}>
+          <div className={cx('item')}>
+            <div className={cx('itemTitle')}>Codeit</div>
             <div className={cx('description')}>
               <li>
                 <a href="https://www.codeit.kr/" target="_blank">
                   Codeit
                 </a>{' '}
-                | March 2023 - September 2023
+                Front-End Sprint Program (Pilot Cohort) | March 2023 - September
+                2023
               </li>
               <li>
                 - Completed an intensive 6-month front-end development bootcamp
               </li>
               <li>
-                - Gained expertise in React ecosystem: TypeScript, NextJS, state
-                management
+                - Gained expertise in React ecosystem: TypeScript, NextJS, and
+                state management
               </li>
               <li>- Learned scalable architectures and monorepo approaches</li>
               <li>
@@ -107,29 +136,6 @@ const Introduction = () => {
               <li>
                 - Experienced collaborative workflows: branching strategies,
                 code reviews
-              </li>
-            </div>
-          </div>
-          <div className={cx('item')}>
-            <div className={cx('itemTitle')}>
-              Yonsei University, Seoul, Korea
-            </div>
-            <div className={cx('description')}>
-              <li>Bachelor of Science | March 2016 - August 2022</li>
-              <li>
-                - Major:{' '}
-                <a
-                  href="https://rus.yonsei.ac.kr/che_en/design/design_intro.do"
-                  target="_blank"
-                >
-                  Human Environment & Design
-                </a>{' '}
-                (The department has since been renamed to Integrated Design)
-              </li>
-              <li>- Combined Major: Culture and Criticism Studies</li>
-              <li>
-                - Studied UX Design, Product Design, and
-                Qualitative/Quantitative UX Research
               </li>
             </div>
           </div>
