@@ -1,7 +1,7 @@
 ---
-title: 'me'
+title: 'AUGUST ARCHIVE PROJECT'
 description: ''
-pubDate: 'Aug 8 1996'
+pubDate: 'Jun 1 2024'
 ---
 
 ### Rick Owens
