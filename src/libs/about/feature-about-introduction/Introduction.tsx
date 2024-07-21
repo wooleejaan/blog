@@ -7,26 +7,6 @@ const Introduction = () => {
   return (
     <div className={cx('container')}>
       <div className={cx('section')}>
-        <p className={cx('heroText')}>
-          <span>
-            Yongwoo Lee believes that great products solve real problems that
-            users can't easily explain. He aims to make products that are sharp
-            and sensitive, focusing on fine details while making complex issues
-            simple to solve. Creating products with a clear purpose and strong
-            beliefs, he thinks it's important to ask questions instead of just
-            listening. Not afraid to challenge ideas, his approach involves
-            making something, improving it, and then repeating the process.
-          </span>
-          <span>
-            Lee believes that success comes from working hard and keeping things
-            simple. Striving to make products that people really need, not just
-            like, he understands users deeply, works very carefully, and always
-            thinks about what users need. He believes that the best products
-            don't have extra, unnecessary parts.
-          </span>
-        </p>
-      </div>
-      <div className={cx('section')}>
         <h3 className={cx('sectionTitle')}>Experience</h3>
         <div className={cx('items')}>
           <div className={cx('item')}>
