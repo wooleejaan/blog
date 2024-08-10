@@ -31,10 +31,6 @@ const Introduction = () => {
                 - Experiencing the growth of both the product and organization
                 in an early-stage startup environment
               </li>
-              <li>
-                - Joined during the seed stage and am now in the pre-Series A
-                stage
-              </li>
             </div>
           </div>
           <div className={cx('item')}>
